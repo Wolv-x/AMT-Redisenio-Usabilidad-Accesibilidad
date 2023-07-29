@@ -4,7 +4,7 @@ Este proyecto consiste en un rediseño del portal web de consultas de multas de 
 
 **Nota: Este proyecto es un prototipo de frontend, por lo tanto no se conecta a ningún servidor backend y todos los datos presentes en el prototipo son ficticios. Los datos simulados utilizados no representan información real de la Agencia Metropolitana de Tránsito de Quito.**
 
-## Autores/Colaboradores
+## Autores
 
 - [Danny Cabrera](https://github.com/DonOtame): Diseñador de interfaz de usuario
 - [Andrés Ponce](https://github.com/aPonce2001): Desarrollador Front-end
