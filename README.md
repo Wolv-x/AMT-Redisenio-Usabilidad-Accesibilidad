@@ -38,8 +38,8 @@ Este proyecto consiste en un rediseño del portal web de consultas de multas de 
   - SortSite: Utilizado para evaluar la accesibilidad del prototipo funcional web.
   - Wave: Otra herramienta utilizada para evaluar la accesibilidad del prototipo funcional web.
 - Cuestionario SUS: Aplicado a usuarios generales y personas que simulan discapacidad para evaluar la satisfacción del usuario.
-- Tecnologías Web: Angular, HTML, CSS, JavaScript, etc.
--Despliegue: GitHub Pages
+- Tecnologías Web: Angular, HTML, CSS con Less, JavaScript, etc.
+- Despliegue: GitHub Pages
 
 ## Licenciamiento
 
