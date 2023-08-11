@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageConfig, getSupportedLanguageCodes } from 'src/config/language-config';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'infracciones-amt';
+  constructor(
+    public translate: TranslateService
+  ) {
+    translate.addLangs(getSupportedLanguageCodes());
+    translate.setDefaultLang(LanguageConfig.DEFAULT_LANGUAGE);
+  }
 }
