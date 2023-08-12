@@ -1,0 +1,73 @@
+@import '../base/colors.less';
+
+@darken-factor: 8%;
+
+.button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0 16px;
+    border-radius: 4px;
+    line-height: 1.15;
+    height: 36px;
+    word-spacing: 0px;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width: 64px;
+    border: none;
+    text-align: center;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    }
+
+    &--primary {
+        background-color: @primary-color;
+        color: @light-color;
+
+        &:hover {
+            background-color: darken(@primary-color, @darken-factor);
+        }
+    }
+
+    &--secondary {
+        background-color: @light-color;
+        color: @primary-color;
+        border: 1px solid @primary-color;
+
+        &:hover {
+            background-color: darken(@light-color, @darken-factor);            
+        }
+    }
+
+    &--danger {
+        background-color: @danger-color;
+        color: @light-color;
+
+        &:hover {
+            background-color: darken(@danger-color, @darken-factor);
+        }
+    }
+
+    &--success {
+        background-color: @success-color;
+        color: @light-color;
+
+        &:hover {
+            background-color: darken(@success-color, @darken-factor);
+        }
+    }
+
+    &--info {
+        background-color: @info-color;
+        color: @light-color;
+
+        &:hover {
+            background-color: darken(@info-color, @darken-factor);
+        }
+    }
+}
