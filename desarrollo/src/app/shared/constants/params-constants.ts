@@ -1,3 +1,3 @@
-export const ParamConstants = {
+export const ParamsConstants = {
     LANGUAGE: 'lang'
 }

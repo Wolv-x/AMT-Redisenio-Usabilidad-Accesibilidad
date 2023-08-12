@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LanguageInitComponent } from './language-init.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LanguageInitComponent
   ],
   imports: [
     BrowserModule,
