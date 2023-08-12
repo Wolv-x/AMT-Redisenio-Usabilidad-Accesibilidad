@@ -1,0 +1,7 @@
+@maxWidthMobile: 1024px;
+
+.respond(@breakpoint, @content) when (@breakpoint = mobile) {
+    @media only screen and (max-width: @maxWidthMobile) {
+        @content();
+    }
+}
