@@ -3,6 +3,10 @@
     "GOVERNMENT": "Municipality of Quito",
     "RIGHTSRESERVED": "All rights reserved"
   },
+  "HEADER": {
+    "AMT": "Metropolitan Transit Agency",
+    "AMT_ALT": "Metropolitan Transit Agency logo containing the acronym AMT by its Spanish name"
+  },
   "LANGUAGE": {
     "SELECT": "Select your language"
   },

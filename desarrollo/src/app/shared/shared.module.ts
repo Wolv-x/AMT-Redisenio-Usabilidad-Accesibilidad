@@ -8,6 +8,7 @@ import { LanguagePickerComponent } from './components/language-picker/language-p
 import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { ButtonComponent } from './components/button/button.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HeaderNavComponent } from './components/header-nav/header-nav.component';
 
 @NgModule({
   declarations: [],
@@ -16,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MainNavComponent,
     ButtonComponent,
     FooterComponent
+    HeaderNavComponent
   ],
   imports: [
     CommonModule,

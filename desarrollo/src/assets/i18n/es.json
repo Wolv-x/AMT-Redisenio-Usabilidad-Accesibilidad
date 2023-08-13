@@ -3,6 +3,10 @@
     "GOVERNMENT": "Municipio de Quito",
     "RIGHTSRESERVED": "Todos los derechos reservados"
   },
+  "HEADER": {
+    "AMT": "Agencia Metropolitana de Tránsito",
+    "AMT_ALT": "Logotipo de la Agencia Metropolitana de Tránsito que contiene las siglas AMT"
+  },
   "LANGUAGE": {
     "SELECT": "Selecciona tu idioma"
   },
