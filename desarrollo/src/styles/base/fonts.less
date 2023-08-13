@@ -10,7 +10,7 @@
 @font-weight-black: 900;
 @font-style-italic: italic;
 
-// Classes
+// Title Classes
 .title--h1 {
     font-size: 1.75em;
     font-weight: @font-weight-bold;
@@ -31,36 +31,61 @@
     font-weight: @font-weight-medium;
 }
 
+// Text Classes
 .text--regular {
     font-size: 1em;
     font-weight: @font-weight-regular;
 }
 
-.text--color-link {
+.text-color--link {
     color: @primary-color;
+
+    a {
+        color: @primary-color;
+    }
 }
 
-.text--color-info {
+.text-color--info {
     color: @info-color;
+
+    a {
+        color: @info-color;
+    }
 }
 
-.text--color-danger {
+.text-color--danger {
     color: @danger-color;
+
+    a {
+        color: @danger-color;
+    }
 }
 
-.text--color-success {
+.text-color--success {
     color: @success-color;
+
+    a {
+        color: @success-color;
+    }
 }
 
-.text--color-gray-dark {
+.text-color--gray-dark {
     color: @gray-color-dark;
+
+    a {
+        color: @gray-color-dark;
+    }
 }
 
-.text--color-dark {
+.text-color--dark {
     color: @dark-color;
+
+    a {
+        color: @dark-color;
+    }
 }
 
-.text--color-light {
+.text-color--light {
     color: @light-color;
 }
 
