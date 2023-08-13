@@ -1,4 +1,8 @@
 {
+  "FOOTER": {
+    "GOVERNMENT": "Municipio de Quito",
+    "RIGHTSRESERVED": "Todos los derechos reservados"
+  },
   "LANGUAGE": {
     "SELECT": "Selecciona tu idioma"
   },

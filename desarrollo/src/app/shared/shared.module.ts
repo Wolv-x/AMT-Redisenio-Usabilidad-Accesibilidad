@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LanguagePickerComponent } from './components/language-picker/language-picker.component';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { ButtonComponent } from './components/button/button.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [],
@@ -14,6 +15,7 @@ import { ButtonComponent } from './components/button/button.component';
     LanguagePickerComponent,
     MainNavComponent,
     ButtonComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
