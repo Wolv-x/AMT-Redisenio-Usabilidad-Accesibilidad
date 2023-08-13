@@ -1,5 +1,8 @@
 {
   "LANGUAGE": {
+    "SELECT": "Select your language"
+  },
+  "MAINNAV": {
     "HOME": "Home",
     "INFORMATION": "Information",
     "INS_REG": "Inspection and Registration",
