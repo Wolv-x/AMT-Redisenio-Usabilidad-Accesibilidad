@@ -1,15 +1,25 @@
-export const LanguageConfig = {
+export interface Language {
+    code: string;
+    name: string;
+}
+
+interface LanguageConfig {
+    LANGUAGES: Record<string, Language>;
+    DEFAULT_LANGUAGE: string;
+}
+
+export const LanguageConfig: LanguageConfig = {
     LANGUAGES: {
-        SPANISH: { code: 'es', name: 'Español' },
-        KICHWA: { code: 'qu-EC', name: 'Kichwa shimi' },
-        SHUAR: { code: 'jiv-EC', name: 'Shuar chicham' },
-        ENGLISH: { code: 'en', name: 'English' },
+        A_SPANISH: { code: 'es', name: 'Español' },
+        B_KICHWA: { code: 'qu-EC', name: 'Kichwa shimi' },
+        C_SHUAR: { code: 'jiv-EC', name: 'Shuar chicham' },
+        D_ENGLISH: { code: 'en', name: 'English' },
     },
     DEFAULT_LANGUAGE: 'es',
 };
 
-export function getSupportedLanguageCodes() {
-    const languageCodes = [];
+export function getSupportedLanguageCodes(): string[] {
+    const languageCodes: string[] = [];
     for (const language of Object.values(LanguageConfig.LANGUAGES)) {
         languageCodes.push(language.code);
     }
