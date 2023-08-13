@@ -20,6 +20,9 @@ export class LanguageInitComponent implements OnInit {
   ngOnInit() {
     const supportedLanguageCodes = getSupportedLanguageCodes();
     this.translate.addLangs(supportedLanguageCodes);
+    supportedLanguageCodes.forEach(code => {
+      this.translate.reloadLang(code);
+    })
     this.translate.setDefaultLang(LanguageConfig.DEFAULT_LANGUAGE);
     this.route.paramMap.subscribe(params => {
       const language = params.get(ParamsConstants.LANGUAGE);
