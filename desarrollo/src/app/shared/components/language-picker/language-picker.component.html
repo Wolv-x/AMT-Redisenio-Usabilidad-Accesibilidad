@@ -1,0 +1,14 @@
+<div class="language-picker">
+    <button (click)="toggleLanguageOptions()" [attr.aria-expanded]="languageOptionsVisible ? 'true' : 'false'"
+        [attr.aria-label]="'LANGUAGE.SELECT' | translate" class="language-picker__button">
+        <span>{{ translate.currentLang }}</span>
+        <span class="arrow" aria-hidden="true">▼</span>
+    </button>
+    <ul class="language-options" [class.visible]="languageOptionsVisible"
+        [attr.aria-hidden]="languageOptionsVisible ? 'false' : 'true'">
+        <li *ngFor="let language of availableLanguages | keyvalue" class="language-option"
+            (click)="setLanguage(language.value.code)" tabindex="0">
+            {{ language.value.name }}
+        </li>
+    </ul>
+</div>
