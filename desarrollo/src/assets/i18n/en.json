@@ -1,1 +1,10 @@
-{}
+{
+  "LANGUAGE": {
+    "HOME": "Home",
+    "INFORMATION": "Information",
+    "INS_REG": "Inspection and Registration",
+    "NEWS": "News",
+    "SERVICES": "Services",
+    "TRANSPARENCY": "Transparency"
+  }
+}
