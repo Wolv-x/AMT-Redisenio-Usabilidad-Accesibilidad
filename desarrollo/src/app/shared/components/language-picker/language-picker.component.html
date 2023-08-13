@@ -7,7 +7,8 @@
     <ul class="language-options" [class.visible]="languageOptionsVisible"
         [attr.aria-hidden]="languageOptionsVisible ? 'false' : 'true'">
         <li *ngFor="let language of availableLanguages | keyvalue" class="language-option"
-            (click)="setLanguage(language.value.code)" tabindex="0">
+            (click)="setLanguage(language.value.code)" (keydown.enter)="setLanguage(language.value.code)"
+            (keydown.space)="setLanguage(language.value.code)" tabindex="0">
             {{ language.value.name }}
         </li>
     </ul>
