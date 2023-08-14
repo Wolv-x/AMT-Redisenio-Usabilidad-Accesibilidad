@@ -11,18 +11,20 @@ import { HelpPopupComponent } from './components/help-popup/help-popup.component
 import { NavFooterTemplate} from './templates/nav-footer-template/nav-footer-template.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderNavComponent } from './components/header-nav/header-nav.component';
+import { SimpleHeaderTemplate } from './templates/simple-header-template/simple-header-template.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [],
   declarations: [
     LanguagePickerComponent,
     MainNavComponent,
     ButtonComponent,
-    FooterComponent
     HelpPopupComponent,
     NavFooterTemplate,
     FooterComponent,
-    HeaderNavComponent
+    HeaderNavComponent,
+    SimpleHeaderTemplate,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
@@ -32,6 +34,7 @@ import { HeaderNavComponent } from './components/header-nav/header-nav.component
   ],
   exports: [
     NavFooterTemplate,
+    SimpleHeaderTemplate
   ]
 })
 export class SharedModule { }
