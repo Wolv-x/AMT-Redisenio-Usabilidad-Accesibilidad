@@ -7,6 +7,16 @@
     "AMT": "Agencia Metropolitana de Tránsito",
     "AMT_ALT": "Logotipo de la Agencia Metropolitana de Tránsito que contiene las siglas AMT"
   },
+  "HELP": {
+    "BUTTON": "¿Necesitas ayuda? Haz clic aquí para obtener más información",
+    "CLOSE": "Cerrar ventana de ayuda",
+    "CONTACT": "Contáctanos",
+    "FAQ": "Preguntas frecuentes",
+    "FAQ_1Q": "¿Cómo consulto mis infracciones pagadas?",
+    "FAQ_2Q": "¿Cómo consulto mis infracciones por pagar?",
+    "TITLE": "¿Necesitas ayuda?",
+    "VIDEO_TEXT": "Observa el siguiente video tutorial que preparamos para ti:"
+  },
   "LANGUAGE": {
     "SELECT": "Selecciona tu idioma"
   },

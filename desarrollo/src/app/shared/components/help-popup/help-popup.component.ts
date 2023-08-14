@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-help-popup',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./help-popup.component.less']
 })
 export class HelpPopupComponent {
+  popupVisible = false;
 
+  constructor(public translate: TranslateService) {}
+
+  togglePopup(): void {
+    this.popupVisible = !this.popupVisible;
+  }
+
+  closePopup(): void {
+    this.popupVisible = false;
+  }
 }

@@ -7,6 +7,16 @@
     "AMT": "Metropolitan Transit Agency",
     "AMT_ALT": "Metropolitan Transit Agency logo containing the acronym AMT by its Spanish name"
   },
+  "HELP": {
+    "BUTTON": "Need help? Click here for more information",
+    "CLOSE": "Exit help window",
+    "CONTACT": "Contact us",
+    "FAQ": "Frequently Asked Questions",
+    "FAQ_1Q": "How do I check my paid infractions?",
+    "FAQ_2Q": "How do I check my unpaid infractions?",
+    "TITLE": "Need help?",
+    "VIDEO_TEXT": "Watch the following video tutorial we prepared for you:"
+  },
   "LANGUAGE": {
     "SELECT": "Select your language"
   },
