@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderNavComponent } from './components/header-nav/header-nav.component';
 import { SimpleHeaderTemplate } from './templates/simple-header-template/simple-header-template.component';
 import { HeaderComponent } from './components/header/header.component';
+import { BreadcrumsComponent } from './components/breadcrums/breadcrums.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HeaderComponent } from './components/header/header.component';
     FooterComponent,
     HeaderNavComponent,
     SimpleHeaderTemplate,
-    HeaderComponent
+    HeaderComponent,
+    BreadcrumsComponent
   ],
   imports: [
     CommonModule,
@@ -37,4 +39,5 @@ import { HeaderComponent } from './components/header/header.component';
     SimpleHeaderTemplate
   ]
 })
+
 export class SharedModule { }

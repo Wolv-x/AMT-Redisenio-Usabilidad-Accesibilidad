@@ -1,0 +1,10 @@
+<nav>
+    <ul class="breadcrumb">
+        <li *ngFor="let breadcrumb of breadcrumbs; let last = last"
+            [ngClass]="{'breadcrumb-item': true, 'active': last}">
+            <a *ngIf="!breadcrumb.isHome && !last" [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a>
+            <a *ngIf="breadcrumb.isHome" [routerLink]="breadcrumb.url"><i class="fa-solid fa-house"></i></a>
+            <span *ngIf="last">{{ breadcrumb.label }}</span>
+        </li>
+    </ul>
+</nav>
