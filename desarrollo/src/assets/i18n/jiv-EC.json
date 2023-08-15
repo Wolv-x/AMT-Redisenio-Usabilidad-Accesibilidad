@@ -17,6 +17,18 @@
     "TITLE": "¿Necesitas ayuda?",
     "VIDEO_TEXT": "Observa el siguiente video tutorial que preparamos para ti:"
   },
+  "LANDING_PAGE": {
+    "SERVICES": {
+      "AMOUNTS": "Valores a pagar",
+      "INFRINGEMENTS_AMT": "Infracciones AMT",
+      "INFRINGEMENTS_ANT": "Infracciones ANT",
+      "ONLINE_PAYMENTS": "Pago en línea",
+      "PREFECTURE_VALUES": "Valores de la prefectura",
+      "SRI_AMOUNTS": "Valores a pagar S R I"
+    },
+    "TITLE": "Consulta tus valores a pagar",
+    "UNAVAILABLE_SERVICE": "Este servicio no está disponible"
+  },
   "LANGUAGE": {
     "SELECT": "Selecciona tu idioma"
   },
