@@ -36,7 +36,9 @@ import { BreadcrumsComponent } from './components/breadcrums/breadcrums.componen
   ],
   exports: [
     NavFooterTemplate,
-    SimpleHeaderTemplate
+    SimpleHeaderTemplate,
+    ButtonComponent,
+    BreadcrumsComponent
   ]
 })
 

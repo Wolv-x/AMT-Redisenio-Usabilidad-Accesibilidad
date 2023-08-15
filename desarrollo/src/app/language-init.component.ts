@@ -31,5 +31,8 @@ export class LanguageInitComponent implements OnInit {
         this.translate.use(language);
       }
     });
+    this.translate.stream('HEADER.AMT').subscribe(
+      (res: string) => res
+    )
   }
 }

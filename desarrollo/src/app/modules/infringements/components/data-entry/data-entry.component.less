@@ -1,0 +1,18 @@
+@import url('../../../../../styles/base/mixins');
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    .respond(mobile, {
+        padding: 0;
+    });
+}
+
+app-breadcrums {
+    .respond(mobile, {
+        display: none;
+    });
+}

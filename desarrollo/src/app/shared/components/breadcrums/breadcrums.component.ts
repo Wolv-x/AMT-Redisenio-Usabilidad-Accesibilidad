@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Breadcrumb } from './models/breadcrum';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-breadcrums',
@@ -8,4 +9,7 @@ import { Breadcrumb } from './models/breadcrum';
 })
 export class BreadcrumsComponent {
   @Input() breadcrumbs: Breadcrumb[] = [];
+  
+  constructor(public translate: TranslateService) {
+  }
 }

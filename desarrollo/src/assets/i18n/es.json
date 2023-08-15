@@ -17,6 +17,21 @@
     "TITLE": "¿Necesitas ayuda?",
     "VIDEO_TEXT": "Observa el siguiente video tutorial que preparamos para ti:"
   },
+  "INFRINGEMENT": {
+    "FORM": {
+      "IDENTITY_DOCUMENT_TYPE": "Cédula de identidad",
+      "NUMBER": "Número de documento",
+      "PASSPORT_TYPE": "Pasaporte",
+      "PLATE_TYPE": "Placa vehicular",
+      "REFUGEE_TYPE": "Carnet de refugiado",
+      "REQUIRED": "Campos obligatorios",
+      "RUC_TYPE": "Registro único de contribuyente",
+      "SUBMIT": "Consultar",
+      "TITLE": "Consulta de infracciones",
+      "TYPE": "Tipo de documento"
+    },
+    "TITLE": "Ingreso de valores"
+  },
   "LANDING_PAGE": {
     "SERVICES": {
       "AMOUNTS": "Valores a pagar",

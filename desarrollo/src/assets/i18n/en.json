@@ -17,6 +17,21 @@
     "TITLE": "Need help?",
     "VIDEO_TEXT": "Watch the following video tutorial we prepared for you:"
   },
+  "INFRINGEMENT": {
+    "FORM": {
+      "IDENTITY_DOCUMENT_TYPE": "Identity cedula",
+      "NUMBER": "Document number",
+      "PASSPORT_TYPE": "Passport",
+      "PLATE_TYPE": "License plate",
+      "REFUGEE_TYPE": "Refugee card",
+      "REQUIRED": "Required fields",
+      "RUC_TYPE": "Taxpayer Unique Registry",
+      "SUBMIT": "Next",
+      "TITLE": "View infringement",
+      "TYPE": "Document type"
+    },
+    "TITLE": "Data entry"
+  },
   "LANDING_PAGE": {
     "SERVICES": {
       "AMOUNTS": "Amounts to be paid",
