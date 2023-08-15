@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { assetsConstants } from '../../constants/assets-constants';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.less']
 })
 export class HeaderComponent {
-
+  logoURL: string = assetsConstants.LOGO_URL + 'light-logo.svg';
 }
