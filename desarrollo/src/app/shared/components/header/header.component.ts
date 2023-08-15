@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { assetsConstants } from '../../constants/assets-constants';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +9,7 @@ import { assetsConstants } from '../../constants/assets-constants';
 })
 export class HeaderComponent {
   logoURL: string = assetsConstants.LOGO_URL + 'light-logo.svg';
+
+  constructor(public translate: TranslateService) {
+  }
 }

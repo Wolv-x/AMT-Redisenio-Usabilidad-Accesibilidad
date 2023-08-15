@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-nav',
@@ -6,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-nav.component.less']
 })
 export class MainNavComponent {
-  constructor() {
+  constructor(public translate: TranslateService) {
   }
 }
