@@ -39,5 +39,8 @@
     "NEWS": "News",
     "SERVICES": "Services",
     "TRANSPARENCY": "Transparency"
+  },
+  "NOTFOUND": {
+    "DOCTITLE": "Page not found"
   }
 }

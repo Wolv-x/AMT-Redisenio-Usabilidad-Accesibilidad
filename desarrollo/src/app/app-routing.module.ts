@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ParamsConstants } from './shared/constants/params-constants';
 import { LanguageGuard } from './shared/guards/language/language.guard';
-import { PageNotFoundComponent } from './error-pages/pages/page-not-found/page-not-found.component';
 import { PathConstants } from './shared/constants/paths-constants';
 import { LanguageConfig } from 'src/config/language-config';
 import { LanguageInitComponent } from './language-init.component';
@@ -30,14 +29,14 @@ const appRoutes: Routes = [
           {
             path: PathConstants.CONSULTATIONS,
             loadChildren: () => import('./modules/landing-page/landing-page.module').then(m => m.LandingPageModule)
+          },
+          {
+            path: '**',
+            loadChildren: () => import('./error-pages/error-pages.module').then(m => m.ErrorPagesModule)
           }
         ]
       }
     ]
-  },
-  {
-    path: '**',
-    component: PageNotFoundComponent
   }
 ];
 

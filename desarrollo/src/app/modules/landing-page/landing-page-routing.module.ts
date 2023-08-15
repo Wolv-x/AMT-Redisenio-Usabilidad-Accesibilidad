@@ -17,17 +17,13 @@ const routes: Routes = [
       {
         path: '',
         component: ServicesComponent
-      },
-      {
-        path: '**',
-        component: PageNotFoundComponent
       }
     ]
   },
   {
     path: '**',
-    component: PageNotFoundComponent
-  }
+    loadChildren: () => import('../../error-pages/error-pages.module').then(m => m.ErrorPagesModule)
+  },
 ];
 
 @NgModule({
