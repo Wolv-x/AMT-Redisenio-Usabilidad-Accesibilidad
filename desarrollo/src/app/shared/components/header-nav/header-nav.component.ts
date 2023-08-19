@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { assetsConstants } from '../../constants/assets-constants';
+import { isMobileViewport } from '../../../../utils/responsive-utils'
 
 @Component({
   selector: 'app-header-nav',
@@ -11,5 +12,9 @@ export class HeaderNavComponent {
   logoURL: string = assetsConstants.LOGO_URL + 'light-logo.svg';
   constructor(public translate: TranslateService) {
     
+  }
+
+  isMobileViewport(): boolean {
+    return isMobileViewport();
   }
 }
