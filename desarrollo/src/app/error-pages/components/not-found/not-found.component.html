@@ -11,8 +11,8 @@
             <div>
                 <p>{{ 'NOTFOUND.MESSAGE' | translate}}</p>
             </div>
-            <app-button class="button button--primary text-weight--medium" [routerLink]="['/' + translate.currentLang]"
-                [type]="'button'" [label]="'NOTFOUND.RETURN' | translate" role="link"></app-button>
+            <button class="button button--primary text-weight--medium"
+                routerLink="/{{translate.currentLang}}" role="link">{{'NOTFOUND.RETURN' | translate}}</button>
         </div>
     </div>
 </div>

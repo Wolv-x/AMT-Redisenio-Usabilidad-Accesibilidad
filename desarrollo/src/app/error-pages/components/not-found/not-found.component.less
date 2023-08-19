@@ -1,3 +1,5 @@
+@import url('../../../../styles/base/mixins.less');
+
 .container--flex-column {
     display: flex;
     flex-direction: column;
@@ -5,6 +7,10 @@
     justify-content: center;
     height: auto;
     margin-top: 5%;
+}
+
+h1 {
+    text-align: center;
 }
 
 img {
@@ -30,8 +36,16 @@ img {
     justify-content: center;
     height: auto;
     margin: 3% 22%;
+
+    .respond(mobile, {
+        flex-wrap: wrap-reverse;
+    })
 }
 
 p {
     text-align: left;
+}
+
+button {
+    text-transform: none !important;
 }
