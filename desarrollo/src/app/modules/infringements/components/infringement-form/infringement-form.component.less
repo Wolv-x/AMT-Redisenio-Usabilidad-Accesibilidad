@@ -43,6 +43,9 @@
             height: 48px;
             border: none;
             border-bottom: 1px solid @dark-color;
+            .respond(mobile, {
+                background-color: @background-color;
+            });
         }
     }
 
@@ -55,6 +58,10 @@
 
     .respond(mobile, {
         border-radius: 0;
+        border-radius: 0;
         max-width: 100%;
+        box-shadow: none;
+        border: none;
+        background-color: @background-color;
     });
 }
