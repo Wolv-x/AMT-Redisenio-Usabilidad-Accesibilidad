@@ -1,21 +1,18 @@
 <div class="container--flex-column">
 
-    <div class="title--h1">
-        <h1>¡Oops, parece que te has desviado de ruta!</h1>
+    <div class="title--h1 text-color--link">
+        <h1>{{ 'NOTFOUND.TITLE' | translate}}</h1>
     </div>
 
     <div class="container--flex---row">
         <img src="https://i.postimg.cc/zXpQ2r5b/traffic-police.png" alt="Policía sosteniendo una señal de tránsito">
 
-        <div class="text-and-button">  
+        <div class="text-and-button">
             <div>
-                <p>Lamentablemente, la página que buscas en nuestra agencia de tránsito no se encuentra en el mapa en este momento.
-                    Te sugerimos volver al sendero principal y explorar las demás opciones disponibles.
-                </p>
+                <p>{{ 'NOTFOUND.MESSAGE' | translate}}</p>
             </div>
-        
-            <button class="button button--primary text-weight--medium">Regresar al inicio</button>       
+            <app-button class="button button--primary text-weight--medium" [routerLink]="['/' + translate.currentLang]"
+                [type]="'button'" [label]="'NOTFOUND.RETURN' | translate" role="link"></app-button>
         </div>
-
     </div>
 </div>

@@ -56,6 +56,10 @@
     "TRANSPARENCY": "Transparencia"
   },
   "NOTFOUND": {
-    "DOCTITLE": "Página no encontrada"
+    "ALT": "Agente de policía sosteniendo una señal de tránsito",
+    "DOCTITLE": "Página no encontrada",
+    "MESSAGE": "Lo sentimos, la página que buscas no está disponible en este momento. Te recomendamos regresar a la página principal para explorar otras opciones. Gracias por tu comprensión.",
+    "RETURN": "Volver al inicio",
+    "TITLE": "¡Ups!, parece que te has desviado de ruta"
   }
 }
