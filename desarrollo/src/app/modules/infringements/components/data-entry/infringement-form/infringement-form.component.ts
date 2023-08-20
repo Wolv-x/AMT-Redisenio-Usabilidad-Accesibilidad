@@ -8,10 +8,4 @@ import { identityDocumentTypes } from '../../../models/identity-document';
 })
 export class InfringementFormComponent {
   documentTypes = identityDocumentTypes;
-
-  xd(){
-    for(let i of identityDocumentTypes){
-      console.log(i);
-    }
-  }
 }

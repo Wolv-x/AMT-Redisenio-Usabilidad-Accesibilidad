@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InfringementFormComponent } from './components/data-entry/infringement-form/infringement-form.component';
 import { FormPageComponent } from './pages/form-page/form-page.component';
 import { DataEntryComponent } from './components/data-entry/data-entry.component';
+import { PathConstants } from 'src/app/shared/constants/paths-constants';
+import { HistoryPageComponent } from './pages/history-page/history-page.component';
+import { HistoryComponent } from './components/history/history.component';
 
 const routes: Routes = [
   {
@@ -12,6 +14,16 @@ const routes: Routes = [
       {
         path: '',
         component: DataEntryComponent
+      }
+    ]
+  },
+  {
+    path: PathConstants.INFRINGEMENTS_HISTORY,
+    component: HistoryPageComponent,
+    children: [
+      {
+        path: '',
+        component: HistoryComponent
       }
     ]
   },
