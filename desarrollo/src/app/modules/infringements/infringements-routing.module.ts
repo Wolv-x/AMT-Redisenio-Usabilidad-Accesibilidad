@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InfringementFormComponent } from './components/infringement-form/infringement-form.component';
+import { InfringementFormComponent } from './components/data-entry/infringement-form/infringement-form.component';
 import { FormPageComponent } from './pages/form-page/form-page.component';
 import { DataEntryComponent } from './components/data-entry/data-entry.component';
 

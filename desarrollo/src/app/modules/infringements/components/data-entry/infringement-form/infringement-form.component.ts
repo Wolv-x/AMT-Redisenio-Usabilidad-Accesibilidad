@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { identityDocumentTypes } from '../models/identity-document';
+import { identityDocumentTypes } from '../../models/identity-document';
 
 @Component({
   selector: 'app-infringement-form',
