@@ -8,7 +8,7 @@
                 }}<span aria-label="required">*</span></label>
             <select id="identity-document-type" name="Identity-document-type" class="form__group__input">
                 <option *ngFor="let identityDocumentType of documentTypes" [value]="identityDocumentType">
-                    {{ identityDocumentType | translate }}
+                    {{ ('INFRINGEMENT.FORM.' + identityDocumentType) | translate }}
                 </option>
             </select>
         </div>
