@@ -12,8 +12,7 @@ import { HistoryPageComponent } from './pages/history-page/history-page.componen
 import { AmountValuesComponent } from './components/history/amount-values/amount-values.component';
 import { InfringementsTableComponent } from './components/history/infringements-table/infringements-table.component';
 import { InfringementDetailComponent } from './components/history/infringement-detail/infringement-detail.component';
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,9 @@ import { InfringementDetailComponent } from './components/history/infringement-d
     CommonModule,
     InfringementsRoutingModule,
     SharedModule,
-    TranslateModule.forChild()
+    TranslateModule.forChild(),
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class InfringementsModule { }

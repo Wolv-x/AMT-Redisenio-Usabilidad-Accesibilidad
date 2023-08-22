@@ -68,11 +68,19 @@
       "VEHICLE": "Vehicle"
     },
     "FORM": {
-      "IDENTITY_DOCUMENT_TYPE": "Identity cedula",
+      "ERRORS": {
+        "CEDULA": "The cedula number entered is invalid. Make sure it is correct.",
+        "PASSPORT": "The passport number entered is invalid. Make sure it is correct.",
+        "PLATE": "The plate number entered is invalid. Make sure it is correct.",
+        "REFUGEE_CARD": "The refugee card number entered is invalid. Make sure it is correct.",
+        "REQUIRED": "{{field}} is required. Please complete this field.",
+        "RUC": "The RUC number entered is invalid. Make sure it is correct."
+      },
+      "IDENTITY_DOCUMENT_TYPE": "Identity Cedula",
       "NUMBER": "Document number",
       "PASSPORT_TYPE": "Passport",
-      "PLATE_TYPE": "License plate",
-      "REFUGEE_TYPE": "Refugee card",
+      "PLATE_TYPE": "License Plate",
+      "REFUGEE_TYPE": "Refugee Card",
       "REQUIRED": "Required fields",
       "RUC_TYPE": "Taxpayer Unique Registry",
       "SUBMIT": "Next",

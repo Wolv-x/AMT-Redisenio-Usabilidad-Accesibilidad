@@ -46,6 +46,10 @@
             .respond(mobile, {
                 background-color: @background-color;
             });
+
+            &::placeholder {
+                color: @gray-color-dark;
+            }
         }
     }
 
@@ -64,4 +68,14 @@
         border: none;
         background-color: @background-color;
     });
+}
+
+.error-container {
+    width: 100%;
+}
+
+.error-messages {
+    padding: 0 0 0 20px;
+    margin: 0;
+    width: 100%;
 }

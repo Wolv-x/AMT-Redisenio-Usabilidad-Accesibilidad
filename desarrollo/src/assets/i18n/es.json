@@ -68,6 +68,14 @@
       "VEHICLE": "Vehículo"
     },
     "FORM": {
+      "ERRORS": {
+        "CEDULA": "El número de cédula ingresado es inválido. Asegúrese de que sea correcto.",
+        "PASSPORT": "El número de pasaporte ingresado es inválido. Asegúrese de que sea correcto.",
+        "PLATE": "El número de placa ingresado es inválido. Asegúrese de que sea correcto.",
+        "REFUGEE_CARD": "El número de carnet de refugiado ingresado es inválido. Asegúrese de que sea correcto.",
+        "REQUIRED": "El número de {{field}} es obligatorio. Por favor, completa este campo.",
+        "RUC": "El número de RUC ingresado es inválido. Asegúrese de que sea correcto."
+      },
       "IDENTITY_DOCUMENT_TYPE": "Cédula de identidad",
       "NUMBER": "Número de documento",
       "PASSPORT_TYPE": "Pasaporte",
