@@ -14,9 +14,16 @@ export const homeBreadcrumb: Breadcrumb = {
     isHome: true
 }
 
-export const infrigementsDataEntryBreadcrumb: Breadcrumb = {
+export const infringementsDataEntryBreadcrumb: Breadcrumb = {
     label: 'INFRINGEMENT.TITLE',
     url: PathConstants.CONSULTATIONS + '/' + PathConstants.INFRINGEMENTS_AMT,
+    isActive: true,
+    isHome: false
+}
+
+export const infringementsHistorialBreadcrumb: Breadcrumb = {
+    label: 'HISTORY.TITLE',
+    url: infringementsDataEntryBreadcrumb.url + PathConstants.INFRINGEMENTS_HISTORY,
     isActive: true,
     isHome: false
 }

@@ -1,1 +1,29 @@
-<p>amount-values works!</p>
+<div class="container bg-color--light">
+    <table>
+        <thead class="bg-color--gray-light" style="display: block;">
+            <tr class="title-row">
+                <th colspan="2">{{ 'INFRINGEMENT.AMOUNTVALUES.INFRINGEMENTS' | translate }}</th>
+            </tr>
+        </thead>
+        <tbody style="display: block;">
+            <tr class="information-row">
+                <td class="text-weight--bold tag">
+                    {{ 'INFRINGEMENT.AMOUNTVALUES.PENDING' | translate }}:
+                </td>
+                <td class="value">
+                    {{ numberToCurrency(pendingValues) }}
+                </td>
+            </tr>
+            <hr>
+            <tr class="information-row">
+                <td class="text-weight--bold tag">
+                    {{ 'INFRINGEMENT.AMOUNTVALUES.TOTAL_PENDING' | translate }}:
+                </td>
+                <td class="value">
+                    {{ numberToCurrency(pendingValues) }}
+                </td>
+            </tr>
+    </table>
+    <app-button class="button button--primary text-weight--medium" [type]="'button'"
+            [label]="'Pagar'" [ariaLabel]="'Pagar - Este servicio no está disponible'"></app-button>
+</div>

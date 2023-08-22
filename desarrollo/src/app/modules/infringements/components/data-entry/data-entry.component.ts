@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Breadcrumb, homeBreadcrumb, infrigementsDataEntryBreadcrumb } from 'src/app/shared/components/breadcrums/models/breadcrum';
+import { Breadcrumb, homeBreadcrumb, infringementsDataEntryBreadcrumb } from 'src/app/shared/components/breadcrums/models/breadcrum';
 
 
 @Component({
@@ -11,7 +11,7 @@ export class DataEntryComponent implements OnInit{
   breadcrumbs: Breadcrumb[] = [ ];
 
   ngOnInit(): void {
-    let currentBreadcrumb: Breadcrumb = infrigementsDataEntryBreadcrumb;
+    let currentBreadcrumb: Breadcrumb = infringementsDataEntryBreadcrumb;
     currentBreadcrumb.isActive = false;
 
     this.breadcrumbs.push(homeBreadcrumb);

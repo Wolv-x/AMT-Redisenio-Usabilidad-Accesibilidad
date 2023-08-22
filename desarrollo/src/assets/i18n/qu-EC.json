@@ -17,7 +17,56 @@
     "TITLE": "¿Necesitas ayuda?",
     "VIDEO_TEXT": "Observa el siguiente video tutorial que preparamos para ti:"
   },
+  "HISTORY": {
+    "TITLE": "Consulta de valores"
+  },
   "INFRINGEMENT": {
+    "AMOUNTVALUES": {
+      "INFRINGEMENTS": "Infracciones",
+      "PENDING": "Valor pendiente",
+      "TOTAL_PENDING": "Total pendiente"
+    },
+    "DATA": {
+      "BOLETA": "Boleta",
+      "DETAILS": "Detalles",
+      "EMISION_DATE": "Fecha de emisión",
+      "INTEREST": "Interés",
+      "PLATE": "Placa",
+      "POINTS": "Puntos",
+      "TOTAL": "Total",
+      "VALUE": "Valor"
+    },
+    "DETAILS": {
+      "AGENT": "Agente",
+      "ALT": "Imagen de la infracción del día {{date}}, donde se notifica que {{observation}}",
+      "ARTICLE": "Artículo",
+      "BOLETA": "Número de Boleta",
+      "CANTON": "Cantón",
+      "DATES": {
+        "APPROVEMENT": "Fecha de aprobación",
+        "EMISION": "Fecha de emisión",
+        "EXPIRATION": "Fecha de vencimiento",
+        "NOTIFICATION": "Fecha de notificación",
+        "REGISTRATION": "Fecha de registro"
+      },
+      "EXEMPTED_INTEREST": "Interés exonerado",
+      "EXEMPTED_VALUE": "Valor exonerado",
+      "INFRINGER": "Infractor",
+      "INTEREST": "Interés",
+      "LOCATION": "Lugar",
+      "NUMBER": "Número de infracción",
+      "NUMERAL": "Numeral",
+      "OBSERVATION": "Observación",
+      "PAYMENT": {
+        "DATE": "Fecha de pago",
+        "PLACE": "Lugar de pago",
+        "VOUCHER": "Comprobante de pago"
+      },
+      "PROVINCE": "Provincia",
+      "TOTAL": "Total",
+      "VALUE": "Valor",
+      "VEHICLE": "Vehículo"
+    },
     "FORM": {
       "IDENTITY_DOCUMENT_TYPE": "Cédula de identidad",
       "NUMBER": "Número de documento",
@@ -29,6 +78,15 @@
       "SUBMIT": "Consultar",
       "TITLE": "Consulta de infracciones",
       "TYPE": "Tipo de documento"
+    },
+    "MORE_DETAILS": "Ver más detalles de la infracción del día {{date}}, con el valor total de {{total}}",
+    "STATUS": {
+      "AGREEMENT": "En convenio",
+      "ANULLED": "Anuladas",
+      "COACTIVE": "En coactiva",
+      "IMPUGNATION": "En impugnación",
+      "PAID": "Pagadas",
+      "PENDING": "Pendientes"
     },
     "TITLE": "Ingreso de valores"
   },

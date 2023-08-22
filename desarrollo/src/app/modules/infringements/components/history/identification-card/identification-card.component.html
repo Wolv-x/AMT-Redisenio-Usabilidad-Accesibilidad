@@ -1,1 +1,7 @@
-<p>identification-card works!</p>
+<div class="bg-color--light identification-card">
+    <div class="icon">
+        <i class="fa-solid text-weight-bold" [ngClass]="{'fa-car': isVehicle(), 'fa-id-card': !isVehicle()}"></i>
+    </div>
+    <p class="title--h4">{{ ( ('INFRINGEMENT.FORM.' + identification.type) | translate) + ' - ' + identification.number }}</p>
+    <p>{{ identification.name }}</p>
+</div>

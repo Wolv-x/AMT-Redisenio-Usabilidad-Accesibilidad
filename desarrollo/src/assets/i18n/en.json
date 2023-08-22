@@ -17,7 +17,56 @@
     "TITLE": "Need help?",
     "VIDEO_TEXT": "Watch the following video tutorial we prepared for you:"
   },
+  "HISTORY": {
+    "TITLE": "Values inquiry"
+  },
   "INFRINGEMENT": {
+    "AMOUNTVALUES": {
+      "INFRINGEMENTS": "Infringement",
+      "PENDING": "Pending values",
+      "TOTAL_PENDING": "Total pending"
+    },
+    "DATA": {
+      "BOLETA": "Number",
+      "DETAILS": "Details",
+      "EMISION_DATE": "Emision Date",
+      "INTEREST": "Interest",
+      "PLATE": "Plate",
+      "POINTS": "Points",
+      "TOTAL": "Total",
+      "VALUE": "Value"
+    },
+    "DETAILS": {
+      "AGENT": "Agent",
+      "ALT": "Image of the infringement of the day {{date}}, where it is notified that {{observation}}",
+      "ARTICLE": "Article",
+      "BOLETA": "Boleta number",
+      "CANTON": "Canton",
+      "DATES": {
+        "APPROVEMENT": "Approvement Date",
+        "EMISION": "Emision Date",
+        "EXPIRATION": "Expiration Date",
+        "NOTIFICATION": "Notification Date",
+        "REGISTRATION": "Registration Date"
+      },
+      "EXEMPTED_INTEREST": "Exempted Interest",
+      "EXEMPTED_VALUE": "Exempted Value",
+      "INFRINGER": "Infringer",
+      "INTEREST": "Interest",
+      "LOCATION": "Location",
+      "NUMBER": "Infringement number",
+      "NUMERAL": "Numeral",
+      "OBSERVATION": "Observation",
+      "PAYMENT": {
+        "DATE": "Payment Date",
+        "PLACE": "Payment Place",
+        "VOUCHER": "Payment Voucher"
+      },
+      "PROVINCE": "Province",
+      "TOTAL": "Total",
+      "VALUE": "Value",
+      "VEHICLE": "Vehicle"
+    },
     "FORM": {
       "IDENTITY_DOCUMENT_TYPE": "Identity cedula",
       "NUMBER": "Document number",
@@ -29,6 +78,15 @@
       "SUBMIT": "Next",
       "TITLE": "View infringement",
       "TYPE": "Document type"
+    },
+    "MORE_DETAILS": "See more details of the violation of the day {{date}}, with the total value of {{total}}",
+    "STATUS": {
+      "AGREEMENT": "In Agreement",
+      "ANULLED": "Anulled",
+      "COACTIVE": "In Coactive",
+      "IMPUGNATION": "In Impugnation",
+      "PAID": "Paid",
+      "PENDING": "Pending"
     },
     "TITLE": "Data entry"
   },

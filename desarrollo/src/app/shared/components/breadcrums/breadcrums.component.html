@@ -3,7 +3,7 @@
         <li *ngFor="let breadcrumb of breadcrumbs; let last = last"
             [ngClass]="{'breadcrumb-item': true, 'active': last}">
             <a *ngIf="!breadcrumb.isHome && !last" [routerLink]="'/'+ translate.currentLang + '/' + breadcrumb.url">{{ breadcrumb.label | translate }}</a>
-            <a *ngIf="breadcrumb.isHome" [routerLink]="breadcrumb.url"><i class="fa-solid fa-house"></i></a>
+            <a *ngIf="breadcrumb.isHome" [routerLink]="'/' + translate.currentLang"><i class="fa-solid fa-house"></i></a>
             <span *ngIf="last">{{ breadcrumb.label | translate }}</span>
         </li>
     </ul>

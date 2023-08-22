@@ -1,1 +1,134 @@
-<p>infringement-detail works!</p>
+<div class="detail" *ngIf="isVisible">
+    <div class="content">
+        <div class="text-color--light bg-color--gray-dark bar title--h2">
+            <div class="bar__title">{{ 'INFRINGEMENT.DETAILS.BOLETA' | translate }}: {{ infringement.boleta }}</div>
+            <div class="bar__close"><button (click)="close()"><i class="fa-solid fa-xmark"></i></button></div>
+        </div>
+        <article class="bg-color--light">
+            <section class="information-section">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.NUMBER' | translate }}:</th>
+                            <td>{{ infringement.id }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.INFRINGER' | translate }}:</th>
+                            <td>{{ infringement.infringer }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.VEHICLE' | translate }}:</th>
+                            <td>{{ infringement.vehicle }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.ARTICLE' | translate }} {{infringement.article.article}} - {{
+                                'INFRINGEMENT.DETAILS.NUMERAL' | translate }} {{ infringement.article.numeral }}:</th>
+                            <td>{{ infringement.article.description }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="values-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.VALUE' | translate }}:</th>
+                            <th>{{ 'INFRINGEMENT.DETAILS.EXEMPTED_VALUE' | translate }}:</th>
+                            <th>{{ 'INFRINGEMENT.DETAILS.INTEREST' | translate }}:</th>
+                            <th>{{ 'INFRINGEMENT.DETAILS.EXEMPTED_INTEREST' | translate }}:</th>
+                            <th>{{ 'INFRINGEMENT.DETAILS.TOTAL' | translate }}:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ formatCurrency(infringement.valuesInformation.value) }}</td>
+                            <td>{{ formatCurrency(infringement.valuesInformation.exemptedValue) }}</td>
+                            <td>{{ formatCurrency(infringement.valuesInformation.interest) }}</td>
+                            <td>{{ formatCurrency(infringement.valuesInformation.exemptedInterest) }}</td>
+                            <td>{{ formatCurrency(infringement.valuesInformation.total) }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="time-section">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.DATES.EMISION' | translate }}:</th>
+                            <td>{{ infringement.dateInformation.emisionDate }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.DATES.REGISTRATION' | translate }}:</th>
+                            <td>{{ infringement.dateInformation.registrationDate }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.DATES.NOTIFICATION' | translate }}:</th>
+                            <td>{{ infringement.dateInformation.notificationDate }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.DATES.APPROVEMENT' | translate }}:</th>
+                            <td>{{ infringement.dateInformation.approvementDate }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.DATES.EXPIRATION' | translate }}:</th>
+                            <td>{{ infringement.dateInformation.expirationDate }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="place-section">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.PROVINCE' | translate }}:</th>
+                            <td>{{ infringement.location.province }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.CANTON' | translate }}:</th>
+                            <td>{{ infringement.location.canton }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.LOCATION' | translate }}:</th>
+                            <td>{{ infringement.location.street }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="observation-section">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.OBSERVATION' | translate }}:</th>
+                            <td>{{ infringement.observation.observation }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.AGENT' | translate }}:</th>
+                            <td>{{ infringement.observation.agent }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="payment-section" *ngIf="infringement.paymentInformation != null">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.PAYMENT.DATE' | translate }}:</th>
+                            <td>{{ infringement.paymentInformation.date }}</td>
+                            <th>{{ 'INFRINGEMENT.DETAILS.PAYMENT.VOUCHER' | translate }}:</th>
+                            <td>{{ infringement.paymentInformation.paymentVoucher }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ 'INFRINGEMENT.DETAILS.PAYMENT.PLACE' | translate }}:</th>
+                            <td colspan="3">{{ infringement.paymentInformation.place }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="img-section">
+                <img *ngIf="infringement.image != null" [src]="infringement.image"
+                    [alt]="'INFRINGEMENT.DETAILS.ALT' | translate: {date: infringement.dateInformation.emisionDate, observation: infringement.observation.observation}">
+            </section>
+        </article>
+    </div>
+    <div class="background bg-color--gray-dark" (click)="close()"></div>
+</div>
