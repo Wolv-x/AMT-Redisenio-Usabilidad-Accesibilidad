@@ -125,7 +125,7 @@
                 </table>
             </section>
             <section class="img-section">
-                <img *ngIf="infringement.image != null" [src]="infringement.image"
+                <img *ngIf="infringement.image != null" [src]="imagesUrl + infringement.image"
                     [alt]="'INFRINGEMENT.DETAILS.ALT' | translate: {date: infringement.dateInformation.emisionDate, observation: infringement.observation.observation}">
             </section>
         </article>

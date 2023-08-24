@@ -1,7 +1,11 @@
+import { IdentificationService } from './../../../services/identification.service';
 import { Component } from '@angular/core';
 import { IdentityDocumentType, identityDocumentTypes } from '../../../models/identity-document';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { IdentificationValidators } from 'src/utils/forms-utils';
+import { Router } from '@angular/router';
+import { Identification } from '../../../models/identification';
+import { PathConstants } from 'src/app/shared/constants/paths-constants';
 
 @Component({
   selector: 'app-infringement-form',
@@ -11,6 +15,8 @@ import { IdentificationValidators } from 'src/utils/forms-utils';
 export class InfringementFormComponent {
   documentTypes = identityDocumentTypes;
   selectValue: string = identityDocumentTypes[0];
+  identificationHasFound: boolean = true;
+
 
   identificationForm = new FormGroup({
     'selectedDocumentType': new FormControl(
@@ -28,7 +34,10 @@ export class InfringementFormComponent {
     )
   });
 
-  constructor() {
+  constructor(
+    private identificationService: IdentificationService,
+    private router: Router
+  ) {
     this.documentType.valueChanges.subscribe(() => {
       this.updateDocumentNumberValidator();
     });
@@ -87,7 +96,14 @@ export class InfringementFormComponent {
   }
 
   onSubmit() {
-
+    this.identificationService.getInfringementHistoryByIdentificationNumber(this.documentNumber.value).subscribe((data: Identification) => {
+      if(this.identificationService.isEmptyIdentification()){
+        this.identificationHasFound = false;
+        return;
+      }
+      
+      this.router.navigate([this.router.url, PathConstants.INFRINGEMENTS_HISTORY]);
+    })
   }
 }
 

@@ -5,6 +5,7 @@ import { DataEntryComponent } from './components/data-entry/data-entry.component
 import { PathConstants } from 'src/app/shared/constants/paths-constants';
 import { HistoryPageComponent } from './pages/history-page/history-page.component';
 import { HistoryComponent } from './components/history/history.component';
+import { HistoryGuard } from './guards/history/history.guard';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
   {
     path: PathConstants.INFRINGEMENTS_HISTORY,
     component: HistoryPageComponent,
+    canActivate: [HistoryGuard],
     children: [
       {
         path: '',

@@ -23,6 +23,7 @@
   "INFRINGEMENT": {
     "AMOUNTVALUES": {
       "INFRINGEMENTS": "Infringement",
+      "PAY": "Pay",
       "PENDING": "Pending values",
       "TOTAL_PENDING": "Total pending"
     },
@@ -70,6 +71,7 @@
     "FORM": {
       "ERRORS": {
         "CEDULA": "The cedula number entered is invalid. Make sure it is correct.",
+        "NOT_FOUND": "Sorry, we couldn't find any results with the provided information. Please double-check the details and try again. If you believe this is an error, we kindly ask you to get in touch with the Metropolitan Transit Agency through their official channels for further assistance.",
         "PASSPORT": "The passport number entered is invalid. Make sure it is correct.",
         "PLATE": "The plate number entered is invalid. Make sure it is correct.",
         "REFUGEE_CARD": "The refugee card number entered is invalid. Make sure it is correct.",

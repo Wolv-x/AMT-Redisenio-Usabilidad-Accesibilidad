@@ -2,6 +2,7 @@ import { formatCurrency } from 'src/utils/formatting-utils';
 import { Component, OnInit } from '@angular/core';
 import { Infringement } from '../../../models/infringement';
 import { PopupStateService } from '../../../services/popup-state.service';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-infringement-detail',
@@ -13,6 +14,7 @@ export class InfringementDetailComponent implements OnInit{
   formatCurrency = formatCurrency;
   public infringement: Infringement = {} as Infringement;
   public isVisible = true;
+  public imagesUrl = environment.data_url + 'images/';
 
   constructor(public popupStateService: PopupStateService) {
     this.popupStateService.infringement$.subscribe(infringement => {

@@ -23,6 +23,7 @@
   "INFRINGEMENT": {
     "AMOUNTVALUES": {
       "INFRINGEMENTS": "Infracciones",
+      "PAY": "Pagar",
       "PENDING": "Valor pendiente",
       "TOTAL_PENDING": "Total pendiente"
     },
@@ -70,6 +71,7 @@
     "FORM": {
       "ERRORS": {
         "CEDULA": "El número de cédula ingresado es inválido. Asegúrese de que sea correcto.",
+        "NOT_FOUND": "No se han encontrado resultados con los datos proporcionados. Por favor, verifique la información e inténtelo nuevamente. Si cree que esto es un error, le invitamos a ponerse en contacto con la Agencia Metropolitana de Tránsito a través de sus canales oficiales para recibir asistencia.",
         "PASSPORT": "El número de pasaporte ingresado es inválido. Asegúrese de que sea correcto.",
         "PLATE": "El número de placa ingresado es inválido. Asegúrese de que sea correcto.",
         "REFUGEE_CARD": "El número de carnet de refugiado ingresado es inválido. Asegúrese de que sea correcto.",

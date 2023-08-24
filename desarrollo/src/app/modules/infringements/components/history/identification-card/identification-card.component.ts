@@ -22,5 +22,13 @@ export class IdentificationCardComponent {
   isVehicle(): boolean {
     return this.identification.type === IdentityDocumentType.REGISTRATION_PLATE
   }
+
+  isEnterprise(): boolean {
+    return this.identification.type === IdentityDocumentType.RUC
+  }
+
+  isPerson(): boolean {
+    return !this.isVehicle() && !this.isEnterprise()
+  }
 }
 

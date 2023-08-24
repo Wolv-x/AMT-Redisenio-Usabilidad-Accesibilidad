@@ -34,16 +34,13 @@ export class IdentificationValidators {
     static licensePlate(control: AbstractControl): ValidationErrors | null {
         const licensePlate: string = control.value;
 
-        const licensePlateRegex = /^[A-Z]{3}\d{3,4}$/;
-        if (!licensePlateRegex.test(licensePlate)) {
-            return { invalidLicensePlate: true };
-        }
+        const regexes = [
+            /^[A-Z]{2}\d{3}[A-Z]{1}$/,
+            /^[A-Z]{3}\d{3}$/,
+            /^[A-Z]{3}\d{4}$/
+        ];
 
-        if (!(/^[A-Z]{3}/.test(licensePlate))) {
-            return { invalidLicensePlate: true };
-        }
-
-        if (!(/\d{3,4}$/.test(licensePlate))) {
+        if (!regexes.some(regex => regex.test(licensePlate))) {
             return { invalidLicensePlate: true };
         }
 

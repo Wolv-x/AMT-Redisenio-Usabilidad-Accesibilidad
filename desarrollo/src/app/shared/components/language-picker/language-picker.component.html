@@ -1,8 +1,9 @@
 <div class="language-picker">
     <button (click)="toggleLanguageOptions()" [attr.aria-expanded]="languageOptionsVisible ? 'true' : 'false'"
         [attr.aria-label]="'LANGUAGE.SELECT' | translate" class="language-picker__button">
+        <i class="fa-solid fa-globe"></i>
         <span>{{ translate.currentLang }}</span>
-        <span class="arrow" aria-hidden="true">▼</span>
+        <i class="arrow" aria-hidden="true" class="fa-solid fa-chevron-down"></i>
     </button>
     <ul class="language-options" [class.visible]="languageOptionsVisible"
         [attr.aria-hidden]="languageOptionsVisible ? 'false' : 'true'">
