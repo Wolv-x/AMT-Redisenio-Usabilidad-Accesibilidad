@@ -32,6 +32,22 @@ Este proyecto consiste en un rediseño del portal web de consultas de multas de 
 ![Captura 3 - Resumen de multas](documentación/images/captura-3.png)
 ![Captura 4 - Detalle de una multa](documentación/images/captura-4.png)
 
+## Datos de Prueba
+Si deseas explorar y probar el proyecto, puedes utilizar los siguientes datos de muestra:
+### Cédula de identidad
+- Número de Identificación: 1718570193
+### Placa de vehículo
+- Número de Placa: ABC123
+### Registro único de contribuyente (RUC)
+- Número de RUC: 1706486170001
+### Carnet de refugiado
+- Número de Carné: R1234567
+### Pasaporte
+- Número de Pasaporte: A1234567
+
+Ten en cuenta que estos son solo ejemplos de datos proporcionados para fines de prueba. Siéntete libre de utilizarlos para interactuar con el proyecto y observar cómo funciona.
+
+
 ## Tecnologías/Herramientas Utilizadas
 
 - Figma: Utilizado para diseñar la primera versión del prototipo y la interfaz de usuario.
