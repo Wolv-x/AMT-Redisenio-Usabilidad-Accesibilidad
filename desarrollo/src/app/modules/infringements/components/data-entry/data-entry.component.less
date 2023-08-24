@@ -1,0 +1,19 @@
+@import url('../../../../../styles/base/mixins');
+@import url('../../../../../styles/base/colors');
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .respond(mobile, {
+        padding: 0;
+    });
+}
+
+app-breadcrums {
+    .respond(mobile, {
+        display: none;
+    });
+}

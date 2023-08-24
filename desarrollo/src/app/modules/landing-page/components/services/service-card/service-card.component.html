@@ -1,0 +1,9 @@
+<a [routerLink]="service.isAvailable ? service.link : null" class="service-card bg-color--light" role="link" [attr.aria-disabled]="!service.isAvailable"
+    [ngClass]="{'service-card--available': service.isAvailable, 'service-card--unavailable': !service.isAvailable}"
+    [attr.tabindex]="0"
+    [attr.aria-label]="service.isAvailable ? (service.name | translate) : ('LANDING_PAGE.UNAVAILABLE_SERVICE' | translate) + ': ' + (service.name | translate)">
+    <img class="service-card__img" [src]="service.imageUrl" [alt]="(service.name | translate)">
+    <p class="service-card__name text-color--gray-dark">{{service.name | translate}}</p>
+    <p class="service-card__status text-color--gray-dark" *ngIf="!service.isAvailable">
+        {{'LANDING_PAGE.UNAVAILABLE_SERVICE' | translate}}</p>
+</a>

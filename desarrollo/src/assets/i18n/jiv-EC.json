@@ -1,0 +1,133 @@
+{
+  "FOOTER": {
+    "GOVERNMENT": "Municipio de Quito",
+    "RIGHTSRESERVED": "Todos los derechos reservados"
+  },
+  "HEADER": {
+    "AMT": "Agencia Metropolitana de Tránsito",
+    "AMT_ALT": "Logotipo de la Agencia Metropolitana de Tránsito que contiene las siglas AMT"
+  },
+  "HELP": {
+    "BUTTON": "¿Necesitas ayuda? Haz clic aquí para obtener más información",
+    "CLOSE": "Cerrar ventana de ayuda",
+    "CONTACT": "Contáctanos",
+    "FAQ": "Preguntas frecuentes",
+    "FAQ_1Q": "¿Cómo consulto mis infracciones pagadas?",
+    "FAQ_2Q": "¿Cómo consulto mis infracciones por pagar?",
+    "TITLE": "¿Necesitas ayuda?",
+    "VIDEO_TEXT": "Observa el siguiente video tutorial que preparamos para ti:"
+  },
+  "HISTORY": {
+    "TITLE": "Consulta de valores"
+  },
+  "INFRINGEMENT": {
+    "AMOUNTVALUES": {
+      "INFRINGEMENTS": "Infracciones",
+      "PAY": "Pagar",
+      "PENDING": "Valor pendiente",
+      "TOTAL_PENDING": "Total pendiente"
+    },
+    "DATA": {
+      "BOLETA": "Boleta",
+      "DETAILS": "Detalles",
+      "EMISION_DATE": "Fecha de emisión",
+      "INTEREST": "Interés",
+      "PLATE": "Placa",
+      "POINTS": "Puntos",
+      "TOTAL": "Total",
+      "VALUE": "Valor"
+    },
+    "DETAILS": {
+      "AGENT": "Agente",
+      "ALT": "Imagen de la infracción del día {{date}}, donde se notifica que {{observation}}",
+      "ARTICLE": "Artículo",
+      "BOLETA": "Número de Boleta",
+      "CANTON": "Cantón",
+      "DATES": {
+        "APPROVEMENT": "Fecha de aprobación",
+        "EMISION": "Fecha de emisión",
+        "EXPIRATION": "Fecha de vencimiento",
+        "NOTIFICATION": "Fecha de notificación",
+        "REGISTRATION": "Fecha de registro"
+      },
+      "EXEMPTED_INTEREST": "Interés exonerado",
+      "EXEMPTED_VALUE": "Valor exonerado",
+      "INFRINGER": "Infractor",
+      "INTEREST": "Interés",
+      "LOCATION": "Lugar",
+      "NUMBER": "Número de infracción",
+      "NUMERAL": "Numeral",
+      "OBSERVATION": "Observación",
+      "PAYMENT": {
+        "DATE": "Fecha de pago",
+        "PLACE": "Lugar de pago",
+        "VOUCHER": "Comprobante de pago"
+      },
+      "PROVINCE": "Provincia",
+      "TOTAL": "Total",
+      "VALUE": "Valor",
+      "VEHICLE": "Vehículo"
+    },
+    "FORM": {
+      "ERRORS": {
+        "CEDULA": "El número de cédula ingresado es inválido. Asegúrese de que sea correcto.",
+        "NOT_FOUND": "No se han encontrado resultados con los datos proporcionados. Por favor, verifique la información e inténtelo nuevamente. Si cree que esto es un error, le invitamos a ponerse en contacto con la Agencia Metropolitana de Tránsito a través de sus canales oficiales para recibir asistencia.",
+        "PASSPORT": "El número de pasaporte ingresado es inválido. Asegúrese de que sea correcto.",
+        "PLATE": "El número de placa ingresado es inválido. Asegúrese de que sea correcto.",
+        "REFUGEE_CARD": "El número de carnet de refugiado ingresado es inválido. Asegúrese de que sea correcto.",
+        "REQUIRED": "El número de {{field}} es obligatorio. Por favor, completa este campo.",
+        "RUC": "El número de RUC ingresado es inválido. Asegúrese de que sea correcto."
+      },
+      "IDENTITY_DOCUMENT_TYPE": "Cédula de identidad",
+      "NUMBER": "Número de documento",
+      "PASSPORT_TYPE": "Pasaporte",
+      "PLATE_TYPE": "Placa vehicular",
+      "REFUGEE_TYPE": "Carnet de refugiado",
+      "REQUIRED": "Campos obligatorios",
+      "RUC_TYPE": "Registro único de contribuyente",
+      "SUBMIT": "Consultar",
+      "TITLE": "Consulta de infracciones",
+      "TYPE": "Tipo de documento"
+    },
+    "MORE_DETAILS": "Ver más detalles de la infracción del día {{date}}, con el valor total de {{total}}",
+    "STATUS": {
+      "AGREEMENT": "En convenio",
+      "ANULLED": "Anuladas",
+      "COACTIVE": "En coactiva",
+      "IMPUGNATION": "En impugnación",
+      "PAID": "Pagadas",
+      "PENDING": "Pendientes"
+    },
+    "TITLE": "Ingreso de valores"
+  },
+  "LANDING_PAGE": {
+    "SERVICES": {
+      "AMOUNTS": "Valores a pagar",
+      "INFRINGEMENTS_AMT": "Infracciones AMT",
+      "INFRINGEMENTS_ANT": "Infracciones ANT",
+      "ONLINE_PAYMENTS": "Pago en línea",
+      "PREFECTURE_VALUES": "Valores de la prefectura",
+      "SRI_AMOUNTS": "Valores a pagar S R I"
+    },
+    "TITLE": "Consulta tus valores a pagar",
+    "UNAVAILABLE_SERVICE": "Este servicio no está disponible"
+  },
+  "LANGUAGE": {
+    "SELECT": "Selecciona tu idioma"
+  },
+  "MAINNAV": {
+    "HOME": "Inicio",
+    "INFORMATION": "Información",
+    "INS_REG": "Revisión y Matriculación",
+    "NEWS": "Noticias",
+    "SERVICES": "Servicios",
+    "TRANSPARENCY": "Transparencia"
+  },
+  "NOTFOUND": {
+    "ALT": "Agente de policía sosteniendo una señal de tránsito",
+    "DOCTITLE": "Página no encontrada",
+    "MESSAGE": "Lo sentimos, la página que buscas no está disponible en este momento. Te recomendamos regresar a la página principal para explorar otras opciones. Gracias por tu comprensión.",
+    "RETURN": "Volver al inicio",
+    "TITLE": "¡Ups!, parece que te has desviado de ruta"
+  }
+}

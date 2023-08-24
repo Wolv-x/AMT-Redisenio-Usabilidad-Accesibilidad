@@ -1,0 +1,146 @@
+@import url('../../../../../../styles/base/colors');
+@import url('../../../../../../styles/base/mixins');
+
+section {
+    border: 1px solid @gray-color-light;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+th,
+td {
+    text-align: start;
+}
+
+th {
+    width: 200px;
+}
+
+td {
+    width: 300px;
+}
+
+table {
+    .respond(mobile, {
+        width: 100%;
+    })
+}
+
+.bar {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button {
+        background-color: inherit;
+        color: inherit;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.values-section th,
+.values-section td {
+    text-align: center;
+    width: 100px;
+}
+
+article {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
+    .respond(mobile, {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        >* {
+            width: 100%;
+        }
+    });
+}
+
+.information-section {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.values-section {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.time-section {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.place-section {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.observation-section {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.payment-section {
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+.img-section {
+    grid-area: 2 / 3 / 5 / 4;
+}
+
+.detail {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    overflow: auto;
+
+    .content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 990px;
+        max-height: 90%;
+        margin: auto;
+        z-index: 1000;
+
+        .respond(mobile, {
+            width: 100%;
+            min-height: 100%;
+        });
+    }
+}
+
+.background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 80;
+    opacity: 50%;
+    min-width: 100%;
+    min-height: 100%;
+
+    .respond(mobile, {
+        display: none
+    });
+}
+
+.img-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}

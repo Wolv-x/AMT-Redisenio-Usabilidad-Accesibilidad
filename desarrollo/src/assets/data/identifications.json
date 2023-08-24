@@ -1,0 +1,351 @@
+[
+    {
+        "number": "1718570193",
+        "name": "CABRERA AGUILAR EDGAR ALEXANDER",
+        "type": "IDENTITY_DOCUMENT_TYPE",
+        "pendingValues": 95,
+        "infringements": [
+            {
+                "id": 1,
+                "antId": 123,
+                "state": "PENDING",
+                "infringer": "CABRERA AGUILAR EDGAR ALEXANDER",
+                "vehicle": "ABC123",
+                "image": "imagen1.jpg",
+                "boleta": "123456",
+                "points": 3,
+                "article": {
+                    "article": 100,
+                    "numeral": 1,
+                    "description": "Exceso de velocidad"
+                },
+                "dateInformation": {
+                    "emisionDate": "2023-08-01",
+                    "registrationDate": "2023-08-02",
+                    "notificationDate": "2023-08-03",
+                    "approvementDate": "",
+                    "expirationDate": "2023-09-01"
+                },
+                "location": {
+                    "province": "Pichincha",
+                    "canton": "Quito",
+                    "street": "Avenida Principal"
+                },
+                "observation": {
+                    "observation": "Observación de agente",
+                    "agent": "Agente López"
+                },
+                "valuesInformation": {
+                    "value": 100,
+                    "exemptedValue": 10,
+                    "interest": 5,
+                    "exemptedInterest": 0,
+                    "total": 95
+                }
+            },
+            {
+                "id": 2,
+                "antId": 124,
+                "state": "PAID",
+                "infringer": "CABRERA AGUILAR EDGAR ALEXANDER",
+                "vehicle": "ABC123",
+                "image": "imagen2.jpg",
+                "boleta": "654321",
+                "points": 2,
+                "article": {
+                    "article": 200,
+                    "numeral": 2,
+                    "description": "Infracción de parqueo"
+                },
+                "dateInformation": {
+                    "emisionDate": "2023-07-01",
+                    "registrationDate": "2023-07-02",
+                    "notificationDate": "2023-07-03",
+                    "approvementDate": "2023-07-04",
+                    "expirationDate": "2023-08-01"
+                },
+                "location": {
+                    "province": "Azuay",
+                    "canton": "Cuenca",
+                    "street": "Calle Principal"
+                },
+                "observation": {
+                    "observation": "Otra observación",
+                    "agent": "Agente Pérez"
+                },
+                "valuesInformation": {
+                    "value": 50,
+                    "exemptedValue": 0,
+                    "interest": 0,
+                    "exemptedInterest": 0,
+                    "total": 50
+                },
+                "paymentInformation": {
+                    "date": "2023-07-31",
+                    "place": "Banco Guayaquil",
+                    "paymentVoucher": "12345678"
+                }
+            }
+        ]
+    },
+    {
+        "number": "1706486170001",
+        "name": "GENERADOR WEB",
+        "type": "RUC_TYPE",
+        "pendingValues": 190,
+        "infringements": [
+            {
+                "id": 3,
+                "antId": 125,
+                "state": "PENDING",
+                "infringer": "GENERADOR WEB",
+                "vehicle": "ABC123",
+                "image": "imagen3.jpg",
+                "boleta": "987654",
+                "points": 5,
+                "article": {
+                    "article": 300,
+                    "numeral": 3,
+                    "description": "Infracción de semáforo en rojo"
+                },
+                "dateInformation": {
+                    "emisionDate": "2023-06-01",
+                    "registrationDate": "2023-06-02",
+                    "notificationDate": "2023-06-03",
+                    "approvementDate": "",
+                    "expirationDate": "2023-07-01"
+                },
+                "location": {
+                    "province": "Guayas",
+                    "canton": "Guayaquil",
+                    "street": "Calle Comercial"
+                },
+                "observation": {
+                    "observation": "Observación de la empresa",
+                    "agent": "Agente de la Empresa"
+                },
+                "valuesInformation": {
+                    "value": 200,
+                    "exemptedValue": 20,
+                    "interest": 10,
+                    "exemptedInterest": 0,
+                    "total": 190
+                }
+            }
+        ]
+    },
+    {
+        "number": "ABC123",
+        "name": "CHEVROLET ABC123",
+        "type": "PLATE_TYPE",
+        "pendingValues": 285,
+        "infringements": [
+            {
+                "id": 1,
+                "antId": 123,
+                "state": "PENDING",
+                "infringer": "CABRERA AGUILAR EDGAR ALEXANDER",
+                "vehicle": "ABC123",
+                "image": "imagen1.jpg",
+                "boleta": "123456",
+                "points": 3,
+                "article": {
+                    "article": 100,
+                    "numeral": 1,
+                    "description": "Exceso de velocidad"
+                },
+                "dateInformation": {
+                    "emisionDate": "2023-08-01",
+                    "registrationDate": "2023-08-02",
+                    "notificationDate": "2023-08-03",
+                    "approvementDate": "",
+                    "expirationDate": "2023-09-01"
+                },
+                "location": {
+                    "province": "Pichincha",
+                    "canton": "Quito",
+                    "street": "Avenida Principal"
+                },
+                "observation": {
+                    "observation": "El vehículo ABC123 muestra un exceso de velocidad.",
+                    "agent": "María López"
+                },
+                "valuesInformation": {
+                    "value": 100,
+                    "exemptedValue": 10,
+                    "interest": 5,
+                    "exemptedInterest": 0,
+                    "total": 95
+                }
+            },
+            {
+                "id": 2,
+                "antId": 124,
+                "state": "PAID",
+                "infringer": "CABRERA AGUILAR EDGAR ALEXANDER",
+                "vehicle": "ABC123",
+                "image": "imagen2.jpg",
+                "boleta": "654321",
+                "points": 2,
+                "article": {
+                    "article": 200,
+                    "numeral": 2,
+                    "description": "Infracción de parqueo"
+                },
+                "dateInformation": {
+                    "emisionDate": "2023-07-01",
+                    "registrationDate": "2023-07-02",
+                    "notificationDate": "2023-07-03",
+                    "approvementDate": "2023-07-04",
+                    "expirationDate": "2023-08-01"
+                },
+                "location": {
+                    "province": "Azuay",
+                    "canton": "Cuenca",
+                    "street": "Calle Principal"
+                },
+                "observation": {
+                    "observation": "El vehículo se estaciona en zona no permitida.",
+                    "agent": "Ramón Pérez"
+                },
+                "valuesInformation": {
+                    "value": 50,
+                    "exemptedValue": 0,
+                    "interest": 0,
+                    "exemptedInterest": 0,
+                    "total": 50
+                },
+                "paymentInformation": {
+                    "date": "2023-07-31",
+                    "place": "Banco Guayaquil",
+                    "paymentVoucher": "12345678"
+                }
+            },
+            {
+                "id": 3,
+                "antId": 125,
+                "state": "PENDING",
+                "infringer": "GENERADOR WEB",
+                "vehicle": "ABC123",
+                "image": "imagen3.jpg",
+                "boleta": "987654",
+                "points": 5,
+                "article": {
+                    "article": 300,
+                    "numeral": 3,
+                    "description": "Infracción de semáforo en rojo"
+                },
+                "dateInformation": {
+                    "emisionDate": "2023-06-01",
+                    "registrationDate": "2023-06-02",
+                    "notificationDate": "2023-06-03",
+                    "approvementDate": "",
+                    "expirationDate": "2023-07-01"
+                },
+                "location": {
+                    "province": "Guayas",
+                    "canton": "Guayaquil",
+                    "street": "Calle Comercial"
+                },
+                "observation": {
+                    "observation": "El vehículo ABC123 no respeta la señal de tránsito de luz roja.",
+                    "agent": "LUIS GONZÁLEZ"
+                },
+                "valuesInformation": {
+                    "value": 200,
+                    "exemptedValue": 20,
+                    "interest": 10,
+                    "exemptedInterest": 0,
+                    "total": 190
+                }
+            }
+        ]
+    },
+    {
+        "number": "R1234567",
+        "name": "CABEZAS MAFLA ROSA MARÍA",
+        "type": "REFUGEE_TYPE",
+        "pendingValues": 165,
+        "infringements": [
+            {
+                "id": 5,
+                "antId": 1,
+                "state": "PENDING",
+                "infringer": "CABEZAS MAFLA ROSA MARÍA",
+                "boleta": "BOLETA-12345",
+                "points": 2,
+                "article": {
+                    "article": 100,
+                    "numeral": 1,
+                    "description": "Falta de permiso para realizar venta ambulante"
+                },
+                "dateInformation": {
+                    "emisionDate": "2023-08-20",
+                    "registrationDate": "2023-08-20",
+                    "notificationDate": "2023-08-22",
+                    "approvementDate": "2023-08-25",
+                    "expirationDate": "2023-09-25"
+                },
+                "location": {
+                    "province": "Pichincha",
+                    "canton": "Quito",
+                    "street": "Calle Principal"
+                },
+                "observation": {
+                    "observation": "Se constató que la infractora realizaba venta ambulante sin el permiso correspondiente",
+                    "agent": "Roberto Pérez"
+                },
+                "valuesInformation": {
+                    "value": 100,
+                    "exemptedValue": 0,
+                    "interest": 10,
+                    "exemptedInterest": 0,
+                    "total": 110
+                }
+            },
+            {
+                "id": 6,
+                "antId": 2,
+                "state": "PENDING",
+                "infringer": "CABEZAS MAFLA ROSA MARÍA",
+                "boleta": "BOLETA-67890",
+                "points": 3,
+                "article": {
+                    "article": 200,
+                    "numeral": 2,
+                    "description": "Consumo de bebidas alcohólicas en la vía pública"
+                },
+                "dateInformation": {
+                    "emisionDate": "2023-08-21",
+                    "registrationDate": "2023-08-21",
+                    "notificationDate": "2023-08-23",
+                    "approvementDate": "2023-08-26",
+                    "expirationDate": "2023-09-26"
+                },
+                "location": {
+                    "province": "Pichincha",
+                    "canton": "Quito",
+                    "street": "Calle Secundaria"
+                },
+                "observation": {
+                    "observation": "La infractora fue encontrada consumiendo bebidas alcohólicas en la vía pública",
+                    "agent": "María López"
+                },
+                "valuesInformation": {
+                    "value": 50,
+                    "exemptedValue": 0,
+                    "interest": 5,
+                    "exemptedInterest": 0,
+                    "total": 55
+                }
+            }
+        ]
+    },
+    {
+        "number": "A1234567",
+        "name": "WILLIS PADILLA MIGUEL ANGEL",
+        "type": "PASSPORT_TYPE",
+        "pendingValues": 0,
+        "infringements": []
+    }
+]

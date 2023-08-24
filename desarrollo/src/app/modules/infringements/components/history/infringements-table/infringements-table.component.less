@@ -1,0 +1,59 @@
+@import url('../../../../../../styles/base/colors');
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    padding: 15px 5px;
+}
+
+tr {
+    text-align: center;
+}
+
+.details {
+    cursor: pointer;
+    font-size: 20px;
+
+    &:hover {
+        color: @primary-color;
+    }
+}
+
+.tabs {
+    margin-bottom: 5px;
+}
+
+.tab {
+    text-align: start;
+    width: 140px;
+    border: none;
+
+    p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    &--active {
+        cursor: pointer;
+    }
+
+    &--inactive {
+        background-color: @background-color !important;
+        color: @gray-color-dark;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    &--selected {
+        background-color: @light-color;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,45 @@
+@import url('../../../../styles/base/colors.less');
+@import url('../../../../styles/base/fonts.less');
+@import url('../../../../styles/base/mixins.less');
+
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .breadcrumb-item {
+        display: flex;
+        align-items: center;
+
+        .fa-house {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        a {
+            color: @primary-color;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+                color: darken(@primary-color, 10%);
+            }
+        }
+
+        &:not(:last-child)::after {
+            content: '>';
+            margin: 0 5px;
+            color: @gray-color-dark;
+        }
+
+        &.active {
+            font-weight: @font-weight-bold;
+            color: @gray-color-dark;
+        }
+    }
+
+    .respond(mobile, {
+        display: none;
+    })
+}

@@ -1,0 +1,46 @@
+<div class="help-popup">
+    <app-button [ariaLabel]="'HELP.BUTTON' | translate" [label]="'?'" [type]="'button'"
+        class="bg-color--primary text-color--light font text-weight--bold help-button" (click)="togglePopup()"
+        aria-haspopup="true" [attr.aria-expanded]="popupVisible"></app-button>
+    <article class="article" *ngIf="popupVisible" role="dialog" aria-modal="true">
+        <h1 class="title--h1 text-color--link" style="text-align: center;">{{ 'HELP.TITLE' | translate }}</h1>
+        <p>{{ 'HELP.VIDEO_TEXT' | translate }}</p>
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <h2 class="title--h2 text-color--link">{{ 'HELP.FAQ' | translate }}</h2>
+        <div class="faq-container">
+            <p>{{ 'HELP.FAQ_1Q' | translate }}</p>
+            <p class="chevron">></p>
+        </div>
+        <div class="faq-container">
+            <p>{{ 'HELP.FAQ_2Q' | translate }}</p>
+            <p class="chevron">></p>
+        </div>
+        <h2 class="title--h2 text-color--link">{{ 'HELP.CONTACT' | translate }}</h2>
+        <div class="contact-info text-color--gray-dark">
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://goo.gl/maps/wAiXKSDGT3Ziohks9" target="_blank">Eloy Alfaro N34-166 y Fernando Ayarza
+                    (Edificio Matter / Oficinas Administrativas)</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://goo.gl/maps/fJ4JsCrabfqMQ7DX9" target="_blank">Pasaje Iturralde y Av. De la Prensa
+                    (Bicentenario / Oficinas atención ciudadana)</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:1800-268-268" target="_blank">1800-268-268</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:denuncias.amt@quito.gob.ec" target="_blank">denuncias.amt@quito.gob.ec</a>
+            </div>
+        </div>
+
+        <app-button [ariaLabel]="'HELP.CLOSE' | translate" [label]="'X'" [type]="'button'"
+            class="close-button text-weight--medium text-color--gray-dark" (click)="closePopup()"></app-button>
+    </article>
+</div>

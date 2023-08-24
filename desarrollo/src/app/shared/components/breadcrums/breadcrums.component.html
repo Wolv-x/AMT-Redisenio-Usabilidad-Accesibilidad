@@ -1,0 +1,10 @@
+<nav>
+    <ul class="breadcrumb">
+        <li *ngFor="let breadcrumb of breadcrumbs; let last = last"
+            [ngClass]="{'breadcrumb-item': true, 'active': last}">
+            <a *ngIf="!breadcrumb.isHome && !last" [routerLink]="'/'+ translate.currentLang + '/' + breadcrumb.url">{{ breadcrumb.label | translate }}</a>
+            <a *ngIf="breadcrumb.isHome" routerLink="/{{ translate.currentLang }}" [attr.aria-label]="'MAINNAV.HOME' | translate"><i class="fa-solid fa-house"></i></a>
+            <span *ngIf="last">{{ breadcrumb.label | translate }}</span>
+        </li>
+    </ul>
+</nav>

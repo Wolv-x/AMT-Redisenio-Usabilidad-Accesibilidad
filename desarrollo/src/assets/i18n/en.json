@@ -1,0 +1,133 @@
+{
+  "FOOTER": {
+    "GOVERNMENT": "Municipality of Quito",
+    "RIGHTSRESERVED": "All rights reserved"
+  },
+  "HEADER": {
+    "AMT": "Metropolitan Transit Agency",
+    "AMT_ALT": "Metropolitan Transit Agency logo containing the acronym AMT by its Spanish name"
+  },
+  "HELP": {
+    "BUTTON": "Need help? Click here for more information",
+    "CLOSE": "Exit help window",
+    "CONTACT": "Contact us",
+    "FAQ": "Frequently Asked Questions",
+    "FAQ_1Q": "How do I check my paid infractions?",
+    "FAQ_2Q": "How do I check my unpaid infractions?",
+    "TITLE": "Need help?",
+    "VIDEO_TEXT": "Watch the following video tutorial we prepared for you:"
+  },
+  "HISTORY": {
+    "TITLE": "Values inquiry"
+  },
+  "INFRINGEMENT": {
+    "AMOUNTVALUES": {
+      "INFRINGEMENTS": "Infringement",
+      "PAY": "Pay",
+      "PENDING": "Pending values",
+      "TOTAL_PENDING": "Total pending"
+    },
+    "DATA": {
+      "BOLETA": "Number",
+      "DETAILS": "Details",
+      "EMISION_DATE": "Emision Date",
+      "INTEREST": "Interest",
+      "PLATE": "Plate",
+      "POINTS": "Points",
+      "TOTAL": "Total",
+      "VALUE": "Value"
+    },
+    "DETAILS": {
+      "AGENT": "Agent",
+      "ALT": "Image of the infringement of the day {{date}}, where it is notified that {{observation}}",
+      "ARTICLE": "Article",
+      "BOLETA": "Boleta number",
+      "CANTON": "Canton",
+      "DATES": {
+        "APPROVEMENT": "Approvement Date",
+        "EMISION": "Emision Date",
+        "EXPIRATION": "Expiration Date",
+        "NOTIFICATION": "Notification Date",
+        "REGISTRATION": "Registration Date"
+      },
+      "EXEMPTED_INTEREST": "Exempted Interest",
+      "EXEMPTED_VALUE": "Exempted Value",
+      "INFRINGER": "Infringer",
+      "INTEREST": "Interest",
+      "LOCATION": "Location",
+      "NUMBER": "Infringement number",
+      "NUMERAL": "Numeral",
+      "OBSERVATION": "Observation",
+      "PAYMENT": {
+        "DATE": "Payment Date",
+        "PLACE": "Payment Place",
+        "VOUCHER": "Payment Voucher"
+      },
+      "PROVINCE": "Province",
+      "TOTAL": "Total",
+      "VALUE": "Value",
+      "VEHICLE": "Vehicle"
+    },
+    "FORM": {
+      "ERRORS": {
+        "CEDULA": "The cedula number entered is invalid. Make sure it is correct.",
+        "NOT_FOUND": "Sorry, we couldn't find any results with the provided information. Please double-check the details and try again. If you believe this is an error, we kindly ask you to get in touch with the Metropolitan Transit Agency through their official channels for further assistance.",
+        "PASSPORT": "The passport number entered is invalid. Make sure it is correct.",
+        "PLATE": "The plate number entered is invalid. Make sure it is correct.",
+        "REFUGEE_CARD": "The refugee card number entered is invalid. Make sure it is correct.",
+        "REQUIRED": "{{field}} is required. Please complete this field.",
+        "RUC": "The RUC number entered is invalid. Make sure it is correct."
+      },
+      "IDENTITY_DOCUMENT_TYPE": "Identity Cedula",
+      "NUMBER": "Document number",
+      "PASSPORT_TYPE": "Passport",
+      "PLATE_TYPE": "License Plate",
+      "REFUGEE_TYPE": "Refugee Card",
+      "REQUIRED": "Required fields",
+      "RUC_TYPE": "Taxpayer Unique Registry",
+      "SUBMIT": "Next",
+      "TITLE": "View infringement",
+      "TYPE": "Document type"
+    },
+    "MORE_DETAILS": "See more details of the violation of the day {{date}}, with the total value of {{total}}",
+    "STATUS": {
+      "AGREEMENT": "In Agreement",
+      "ANULLED": "Anulled",
+      "COACTIVE": "In Coactive",
+      "IMPUGNATION": "In Impugnation",
+      "PAID": "Paid",
+      "PENDING": "Pending"
+    },
+    "TITLE": "Data entry"
+  },
+  "LANDING_PAGE": {
+    "SERVICES": {
+      "AMOUNTS": "Amounts to be paid",
+      "INFRINGEMENTS_AMT": "Infringements in AMT",
+      "INFRINGEMENTS_ANT": "Infringements in ANT",
+      "ONLINE_PAYMENTS": "Online payments",
+      "PREFECTURE_VALUES": "Prefectural values",
+      "SRI_AMOUNTS": "Amounts to be paid to S R I"
+    },
+    "TITLE": "Check your values to be paid",
+    "UNAVAILABLE_SERVICE": "This service is not available"
+  },
+  "LANGUAGE": {
+    "SELECT": "Select your language"
+  },
+  "MAINNAV": {
+    "HOME": "Home",
+    "INFORMATION": "Information",
+    "INS_REG": "Inspection and Registration",
+    "NEWS": "News",
+    "SERVICES": "Services",
+    "TRANSPARENCY": "Transparency"
+  },
+  "NOTFOUND": {
+    "ALT": "Police officer holding a traffic sign",
+    "DOCTITLE": "Page not found",
+    "MESSAGE": "Sorry, the page you are looking for is not here at this time. We recommend you return to the main page to explore other options. Thank you for your understanding.",
+    "RETURN": "Return to home page",
+    "TITLE": "Oops, you seem to have taken a wrong way"
+  }
+}

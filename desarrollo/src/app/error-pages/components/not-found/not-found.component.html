@@ -1,0 +1,18 @@
+<div class="container--flex-column">
+
+    <div class="title--h1 text-color--link">
+        <h1>{{ 'NOTFOUND.TITLE' | translate}}</h1>
+    </div>
+
+    <div class="container--flex---row">
+        <img src="https://i.postimg.cc/zXpQ2r5b/traffic-police.png" alt="Policía sosteniendo una señal de tránsito">
+
+        <div class="text-and-button">
+            <div>
+                <p>{{ 'NOTFOUND.MESSAGE' | translate}}</p>
+            </div>
+            <button class="button button--primary text-weight--medium"
+                routerLink="/{{translate.currentLang}}" role="link">{{'NOTFOUND.RETURN' | translate}}</button>
+        </div>
+    </div>
+</div>

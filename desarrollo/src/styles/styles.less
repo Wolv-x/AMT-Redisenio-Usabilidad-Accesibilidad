@@ -1,0 +1,36 @@
+@import 'base/colors';
+@import 'base/fonts';
+@import 'components/buttons.less';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: @font-family;
+    box-sizing: border-box;
+    font-size: 1em;
+
+    &:focus-visible {
+        outline: none !important;
+        border-style: solid !important;
+        border-width: 2px !important;
+        border-color: rgb(0, 0, 0) !important;
+        box-shadow: 0 0 0 2px #FFF !important;
+    }
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-color: @background-color;
+    margin: 0;
+    background-image: url('../assets/images/bg/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+.noscroll {
+    overflow: hidden;
+}

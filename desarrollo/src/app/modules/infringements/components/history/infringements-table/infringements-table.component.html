@@ -1,0 +1,83 @@
+<div class="tabs">
+    <button class="tab bg-color--gray-light" (click)="selectedInfringements = pendingInfringements"
+        [class.tab--selected]="selectedInfringements === pendingInfringements"
+        [class.tab--inactive]="pendingInfringements.length === 0" [class.tab--active]="pendingInfringements.length > 0"
+        [attr.aria-disabled]="pendingInfringements.length === 0">
+        <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.PENDING' | translate }}</p>
+        <p>({{ pendingInfringements.length }}) - {{ formatCurrency(totalSumByCategory(pendingInfringements))}}</p>
+    </button>
+    <button class="tab bg-color--gray-light" (click)="selectedInfringements = paidInfringements"
+        [class.tab--selected]="selectedInfringements === paidInfringements"
+        [class.tab--inactive]="paidInfringements.length === 0" [class.tab--active]="paidInfringements.length > 0"
+        [attr.aria-disabled]="paidInfringements.length === 0">
+        <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.PAID' | translate }}</p>
+        <p>({{ paidInfringements.length }}) - {{ formatCurrency(totalSumByCategory(paidInfringements))}}</p>
+    </button>
+    <button class="tab bg-color--gray-light" *ngIf="!isMobileViewport()"
+        (click)="selectedInfringements = anulledInfringements"
+        [class.tab--selected]="selectedInfringements === anulledInfringements"
+        [class.tab--inactive]="anulledInfringements.length === 0" [class.tab--active]="anulledInfringements.length > 0"
+        [attr.aria-disabled]="anulledInfringements.length === 0">
+        <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.ANULLED' | translate }}</p>
+        <p>({{ anulledInfringements.length }}) - {{ formatCurrency(totalSumByCategory(anulledInfringements)) }}</p>
+    </button>
+    <button class="tab bg-color--gray-light" *ngIf="!isMobileViewport()"
+        (click)="selectedInfringements = agreementInfringements"
+        [class.tab--selected]="selectedInfringements === agreementInfringements"
+        [class.tab--inactive]="agreementInfringements.length === 0"
+        [class.tab--active]="agreementInfringements.length > 0"
+        [attr.aria-disabled]="agreementInfringements.length === 0">
+        <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.AGREEMENT' | translate }}</p>
+        <p>({{ agreementInfringements.length }}) - {{ formatCurrency(totalSumByCategory(agreementInfringements)) }}</p>
+    </button>
+    <button class="tab bg-color--gray-light" *ngIf="!isMobileViewport()"
+        (click)="selectedInfringements = coactiveInfringements"
+        [class.tab--selected]="selectedInfringements === coactiveInfringements"
+        [class.tab--inactive]="coactiveInfringements.length === 0"
+        [class.tab--active]="coactiveInfringements.length > 0"
+        [attr.aria-disabled]="coactiveInfringements.length === 0">
+        <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.COACTIVE' | translate }}</p>
+        <p>({{ coactiveInfringements.length }}) - {{ formatCurrency(totalSumByCategory(coactiveInfringements)) }}</p>
+    </button>
+    <button class="tab bg-color--gray-light" *ngIf="!isMobileViewport()"
+        (click)="selectedInfringements = impugnationInfringements"
+        [class.tab--selected]="selectedInfringements === impugnationInfringements"
+        [class.tab--inactive]="impugnationInfringements.length === 0"
+        [class.tab--active]="impugnationInfringements.length > 0"
+        [attr.aria-disabled]="impugnationInfringements.length === 0">
+        <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.IMPUGNATION' | translate }}</p>
+        <p>({{ impugnationInfringements.length }}) - {{ formatCurrency(totalSumByCategory(impugnationInfringements)) }}
+        </p>
+    </button>
+</div>
+<table cellspacing="0">
+    <thead class="bg-color--gray-light">
+        <tr>
+            <th *ngIf="!isMobileViewport()">{{ 'INFRINGEMENT.DATA.BOLETA' | translate }}</th>
+            <th *ngIf="!isMobileViewport()">{{ 'INFRINGEMENT.DATA.PLATE' | translate }}</th>
+            <th>{{ 'INFRINGEMENT.DATA.EMISION_DATE' | translate }}</th>
+            <th *ngIf="!isMobileViewport()">{{ 'INFRINGEMENT.DATA.POINTS' | translate }}</th>
+            <th *ngIf="!isMobileViewport()">{{ 'INFRINGEMENT.DATA.VALUE' | translate }}</th>
+            <th *ngIf="!isMobileViewport()">{{ 'INFRINGEMENT.DATA.INTEREST' | translate }}</th>
+            <th>{{ 'INFRINGEMENT.DATA.TOTAL' | translate }}</th>
+            <th>{{ 'INFRINGEMENT.DATA.DETAILS' | translate }}</th>
+        </tr>
+    </thead>
+    <tbody class="bg-color--light">
+        <tr *ngFor="let infringement of selectedInfringements">
+            <td *ngIf="!isMobileViewport()">{{ infringement.boleta }}</td>
+            <td *ngIf="!isMobileViewport()">{{ infringement.vehicle }}</td>
+            <td>{{ infringement.dateInformation.emisionDate }}</td>
+            <td *ngIf="!isMobileViewport()">{{ infringement.points }}</td>
+            <td *ngIf="!isMobileViewport()">{{ formatCurrency(infringement.valuesInformation.value) }}</td>
+            <td *ngIf="!isMobileViewport()">{{ formatCurrency(infringement.valuesInformation.interest) }}</td>
+            <td>{{ formatCurrency(infringement.valuesInformation.total) }}</td>
+            <td
+                [attr.aria-label]="'INFRINGEMENT.MORE_DETAILS' | translate: {date: infringement.dateInformation.emisionDate, total: infringement.valuesInformation.total}"
+                role="button" class="text-weight--black details" tabindex="0" (click)="showInfringementDetails(infringement)">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<app-infringement-detail></app-infringement-detail>
