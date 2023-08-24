@@ -27,9 +27,10 @@ Este proyecto consiste en un rediseño del portal web de consultas de multas de 
 
 ## Capturas de Pantalla
 
-![Captura 1 - Pantalla de Inicio](enlace-a-captura-1.png)
-![Captura 2 - Página de Consulta de Multas](enlace-a-captura-2.png)
-![Captura 3 - Formulario de Búsqueda](enlace-a-captura-3.png)
+![Captura 1 - Pantalla de inicio](documentación/images/captura-1.png)
+![Captura 2 - Página de Consulta de multas](documentación/images/captura-2.png)
+![Captura 3 - Resumen de multas](documentación/images/captura-3.png)
+![Captura 4 - Detalle de una multa](documentación/images/captura-4.png)
 
 ## Tecnologías/Herramientas Utilizadas
 
