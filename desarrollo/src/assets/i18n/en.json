@@ -43,6 +43,7 @@
       "ARTICLE": "Article",
       "BOLETA": "Boleta number",
       "CANTON": "Canton",
+      "CLOSE": "Hide infringement details",
       "DATES": {
         "APPROVEMENT": "Approvement Date",
         "EMISION": "Emision Date",
