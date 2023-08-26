@@ -72,9 +72,11 @@
             <td *ngIf="!isMobileViewport()">{{ formatCurrency(infringement.valuesInformation.value) }}</td>
             <td *ngIf="!isMobileViewport()">{{ formatCurrency(infringement.valuesInformation.interest) }}</td>
             <td>{{ formatCurrency(infringement.valuesInformation.total) }}</td>
-            <td
-                [attr.aria-label]="'INFRINGEMENT.MORE_DETAILS' | translate: {date: infringement.dateInformation.emisionDate, total: infringement.valuesInformation.total}"
-                role="button" class="text-weight--black details" tabindex="0" (click)="showInfringementDetails(infringement)">
+            <td [attr.aria-label]="'INFRINGEMENT.MORE_DETAILS' | translate: {date: infringement.dateInformation.emisionDate, total: infringement.valuesInformation.total}"
+                role="button" class="text-weight--black details" tabindex="0"
+                (click)="showInfringementDetails(infringement)" (click)="showInfringementDetails(infringement)"
+                (keydown.enter)="showInfringementDetails(infringement)"
+                (keydown.space)="showInfringementDetails(infringement)">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </td>
         </tr>

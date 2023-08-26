@@ -1,12 +1,14 @@
-<form class="bg-color--light form" [formGroup]="identificationForm" (ngSubmit)="onSubmit()">
+<form class="bg-color--light form" [formGroup]="identificationForm" (ngSubmit)="onSubmit()" role="form">
     <fieldset class="form__fieldset">
         <legend class="title--h1 form__legend text-color--link text-weight--black">
             {{ "INFRINGEMENT.FORM.TITLE" | translate }}
         </legend>
         <div class="form__group text-color--gray-dark">
-            <label for="identity-document-type" class="form__group__label text-weight--medium">{{
-                "INFRINGEMENT.FORM.TYPE" | translate
-                }}<span aria-label="required">*</span></label>
+            <label for="identity-document-type" class="form__group__label text-weight--medium">
+                {{ "INFRINGEMENT.FORM.TYPE" | translate }}
+                <span aria-hidden="true">*</span>
+                <span class="sr-only">{{ "INFRINGEMENT.FORM.REQUIRED_FIELD" | translate }}</span>
+            </label>
             <select id="identity-document-type" name="Identity-document-type" class="form__group__input"
                 formControlName="selectedDocumentType">
                 <option *ngFor="let identityDocumentType of documentTypes" [value]="identityDocumentType">
@@ -15,41 +17,46 @@
             </select>
         </div>
         <div class="form__group text-color--gray-dark">
-            <label for="identity-document-number" class="form__group__label text-weight--medium">{{
-                "INFRINGEMENT.FORM.NUMBER" | translate
-                }}<span aria-label="required">*</span></label>
+            <label for="identity-document-number" class="form__group__label text-weight--medium">
+                {{ "INFRINGEMENT.FORM.NUMBER" | translate }}
+                <span aria-hidden="true">*</span>
+                <span class="sr-only">{{ "INFRINGEMENT.FORM.REQUIRED_FIELD" | translate }}</span>
+            </label>
             <input type="text" id="identity-document-number" name="Identity-document-number" class="form__group__input"
                 [placeholder]="'INFRINGEMENT.FORM.' + documentType.value | translate" formControlName="documentNumber"
                 (input)="onDocumentNumberInput($event)" (change)="onDocumentNumberChange($event)" />
         </div>
-        <div class="text-color--danger error-container" [hidden]="(documentNumber.valid || documentNumber.pristine) && identificationHasFound">
-            <ul class="error-messages">
-                <li *ngIf="documentNumber.errors?.['required']">
+        <div class="text-color--danger error-container"
+            [hidden]="(documentNumber.valid || documentNumber.pristine) && identificationHasFound">
+            <ul class="error-messages" aria-live="assertive">
+                <li *ngIf="documentNumber.errors?.['required']" role="alert">
                     {{ "INFRINGEMENT.FORM.ERRORS.REQUIRED" | translate: { field: ('INFRINGEMENT.FORM.' +
                     documentType.value | translate) } }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidCedula']">
+                <li *ngIf="documentNumber.errors?.['invalidCedula']" role="alert">
                     {{ "INFRINGEMENT.FORM.ERRORS.CEDULA" | translate }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidLicensePlate']">
+                <li *ngIf="documentNumber.errors?.['invalidLicensePlate']" role="alert">
                     {{ "INFRINGEMENT.FORM.ERRORS.PLATE" | translate }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidRuc']">
+                <li *ngIf="documentNumber.errors?.['invalidRuc']" role="alert">
                     {{ "INFRINGEMENT.FORM.ERRORS.RUC" | translate }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidRefugeeCard']">
+                <li *ngIf="documentNumber.errors?.['invalidRefugeeCard']" role="alert">
                     {{ "INFRINGEMENT.FORM.ERRORS.REFUGEE_CARD" | translate }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidPassport']">
+                <li *ngIf="documentNumber.errors?.['invalidPassport']" role="alert">
                     {{ "INFRINGEMENT.FORM.ERRORS.PASSPORT" | translate }}
                 </li>
-                <li *ngIf="!identificationHasFound">
+                <li *ngIf="!identificationHasFound" role="alert">
                     {{ "INFRINGEMENT.FORM.ERRORS.NOT_FOUND" | translate }}
                 </li>
             </ul>
         </div>
         <p class="form__required text-color--gray-dark text-weight--medium">
-            <span aria-label="required">*</span>{{ "INFRINGEMENT.FORM.REQUIRED" | translate }}
+            <span aria-hidden="true">*</span>
+            <span class="sr-only">{{ "INFRINGEMENT.FORM.REQUIRED_FIELD" | translate }}</span>
+            {{ "INFRINGEMENT.FORM.REQUIRED" | translate }}
         </p>
         <button class="button button--primary form__button text-weight--medium" type="submit"
             [disabled]="identificationForm.invalid" [class.button--disabled]="identificationForm.invalid">

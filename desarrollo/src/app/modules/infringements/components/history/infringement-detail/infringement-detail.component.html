@@ -1,10 +1,12 @@
-<div class="detail" *ngIf="isVisible">
+<div class="detail" *ngIf="isVisible" role="dialog" aria-modal="true">
     <div class="content">
         <div class="text-color--light bg-color--gray-dark bar title--h2">
             <div class="bar__title">{{ 'INFRINGEMENT.DETAILS.BOLETA' | translate }}: {{ infringement.boleta }}</div>
-            <div class="bar__close"><button (click)="close()"
-                    [attr.aria-label]="'INFRINGEMENT.DETAILS.CLOSE' | translate" type="button"><i
-                        class="fa-solid fa-xmark"></i></button></div>
+            <div class="bar__close">
+                <button (click)="close()" [attr.aria-label]="'INFRINGEMENT.DETAILS.CLOSE' | translate" type="button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
         </div>
         <article class="bg-color--light">
             <section class="information-section">

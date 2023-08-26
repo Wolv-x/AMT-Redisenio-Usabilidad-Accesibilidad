@@ -85,6 +85,7 @@
       "PLATE_TYPE": "Placa vehicular",
       "REFUGEE_TYPE": "Carnet de refugiado",
       "REQUIRED": "Campos obligatorios",
+      "REQUIRED_FIELD": "Campo obligatorio",
       "RUC_TYPE": "Registro único de contribuyente",
       "SUBMIT": "Consultar",
       "TITLE": "Consulta de infracciones",
