@@ -43,6 +43,7 @@
       "ARTICLE": "Artículo",
       "BOLETA": "Número de Boleta",
       "CANTON": "Cantón",
+      "CLOSE": "Ocultar detalles de la infracción",
       "DATES": {
         "APPROVEMENT": "Fecha de aprobación",
         "EMISION": "Fecha de emisión",
@@ -84,6 +85,7 @@
       "PLATE_TYPE": "Placa vehicular",
       "REFUGEE_TYPE": "Carnet de refugiado",
       "REQUIRED": "Campos obligatorios",
+      "REQUIRED_FIELD": "Campo obligatorio",
       "RUC_TYPE": "Registro único de contribuyente",
       "SUBMIT": "Consultar",
       "TITLE": "Consulta de infracciones",

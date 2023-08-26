@@ -43,6 +43,7 @@
       "ARTICLE": "Article",
       "BOLETA": "Boleta number",
       "CANTON": "Canton",
+      "CLOSE": "Hide infringement details",
       "DATES": {
         "APPROVEMENT": "Approvement Date",
         "EMISION": "Emision Date",
@@ -84,6 +85,7 @@
       "PLATE_TYPE": "License Plate",
       "REFUGEE_TYPE": "Refugee Card",
       "REQUIRED": "Required fields",
+      "REQUIRED_FIELD": "Required field",
       "RUC_TYPE": "Taxpayer Unique Registry",
       "SUBMIT": "Next",
       "TITLE": "View infringement",
