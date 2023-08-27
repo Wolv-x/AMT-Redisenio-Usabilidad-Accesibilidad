@@ -36,6 +36,5 @@ export class AppComponent implements OnDestroy {
     this.translate.stream('ON_PAGE_CHANGE', { title: newTitle }).subscribe(
       (res: string) => this.liveAnnouncer.announce(res)
     )
-    //this.liveAnnouncer.announce(newTitle, 'polite');
   }
 }
