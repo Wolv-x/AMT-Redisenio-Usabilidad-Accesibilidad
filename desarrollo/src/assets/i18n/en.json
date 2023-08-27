@@ -131,5 +131,6 @@
     "MESSAGE": "Sorry, the page you are looking for is not here at this time. We recommend you return to the main page to explore other options. Thank you for your understanding.",
     "RETURN": "Return to home page",
     "TITLE": "Oops, you seem to have taken a wrong way"
-  }
+  },
+  "ON_PAGE_CHANGE": "You are now in the page {{title}}"
 }

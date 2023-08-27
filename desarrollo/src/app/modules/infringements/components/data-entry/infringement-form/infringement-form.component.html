@@ -29,26 +29,26 @@
         <div class="text-color--danger error-container"
             [hidden]="(documentNumber.valid || documentNumber.pristine) && identificationHasFound">
             <ul class="error-messages" aria-live="assertive">
-                <li *ngIf="documentNumber.errors?.['required']" role="alert">
+                <li *ngIf="documentNumber.errors?.['required']" role="alert" aria-invalid="true">
                     {{ "INFRINGEMENT.FORM.ERRORS.REQUIRED" | translate: { field: ('INFRINGEMENT.FORM.' +
                     documentType.value | translate) } }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidCedula']" role="alert">
+                <li *ngIf="documentNumber.errors?.['invalidCedula']" role="alert" aria-invalid="true">
                     {{ "INFRINGEMENT.FORM.ERRORS.CEDULA" | translate }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidLicensePlate']" role="alert">
+                <li *ngIf="documentNumber.errors?.['invalidLicensePlate']" role="alert" aria-invalid="true">
                     {{ "INFRINGEMENT.FORM.ERRORS.PLATE" | translate }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidRuc']" role="alert">
+                <li *ngIf="documentNumber.errors?.['invalidRuc']" role="alert" aria-invalid="true">
                     {{ "INFRINGEMENT.FORM.ERRORS.RUC" | translate }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidRefugeeCard']" role="alert">
+                <li *ngIf="documentNumber.errors?.['invalidRefugeeCard']" role="alert" aria-invalid="true">
                     {{ "INFRINGEMENT.FORM.ERRORS.REFUGEE_CARD" | translate }}
                 </li>
-                <li *ngIf="documentNumber.errors?.['invalidPassport']" role="alert">
+                <li *ngIf="documentNumber.errors?.['invalidPassport']" role="alert" aria-invalid="true">
                     {{ "INFRINGEMENT.FORM.ERRORS.PASSPORT" | translate }}
                 </li>
-                <li *ngIf="!identificationHasFound" role="alert">
+                <li *ngIf="!identificationHasFound" role="alert" aria-invalid="true">
                     {{ "INFRINGEMENT.FORM.ERRORS.NOT_FOUND" | translate }}
                 </li>
             </ul>

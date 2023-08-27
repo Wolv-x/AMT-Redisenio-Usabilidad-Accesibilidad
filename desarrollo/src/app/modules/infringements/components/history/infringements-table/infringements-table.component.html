@@ -4,14 +4,14 @@
         [class.tab--inactive]="pendingInfringements.length === 0" [class.tab--active]="pendingInfringements.length > 0"
         [attr.aria-disabled]="pendingInfringements.length === 0">
         <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.PENDING' | translate }}</p>
-        <p>({{ pendingInfringements.length }}) - {{ formatCurrency(totalSumByCategory(pendingInfringements))}}</p>
+        <p>{{ formatCurrency(totalSumByCategory(pendingInfringements))}} - ({{ pendingInfringements.length }})</p>
     </button>
     <button class="tab bg-color--gray-light" (click)="selectedInfringements = paidInfringements"
         [class.tab--selected]="selectedInfringements === paidInfringements"
         [class.tab--inactive]="paidInfringements.length === 0" [class.tab--active]="paidInfringements.length > 0"
         [attr.aria-disabled]="paidInfringements.length === 0">
         <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.PAID' | translate }}</p>
-        <p>({{ paidInfringements.length }}) - {{ formatCurrency(totalSumByCategory(paidInfringements))}}</p>
+        <p>{{ formatCurrency(totalSumByCategory(paidInfringements))}} - ({{ paidInfringements.length }})</p>
     </button>
     <button class="tab bg-color--gray-light" *ngIf="!isMobileViewport()"
         (click)="selectedInfringements = anulledInfringements"
@@ -19,7 +19,7 @@
         [class.tab--inactive]="anulledInfringements.length === 0" [class.tab--active]="anulledInfringements.length > 0"
         [attr.aria-disabled]="anulledInfringements.length === 0">
         <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.ANULLED' | translate }}</p>
-        <p>({{ anulledInfringements.length }}) - {{ formatCurrency(totalSumByCategory(anulledInfringements)) }}</p>
+        <p>{{ formatCurrency(totalSumByCategory(anulledInfringements)) }} - ({{ anulledInfringements.length }})</p>
     </button>
     <button class="tab bg-color--gray-light" *ngIf="!isMobileViewport()"
         (click)="selectedInfringements = agreementInfringements"
@@ -28,7 +28,7 @@
         [class.tab--active]="agreementInfringements.length > 0"
         [attr.aria-disabled]="agreementInfringements.length === 0">
         <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.AGREEMENT' | translate }}</p>
-        <p>({{ agreementInfringements.length }}) - {{ formatCurrency(totalSumByCategory(agreementInfringements)) }}</p>
+        <p>{{ formatCurrency(totalSumByCategory(agreementInfringements)) }} - ({{ agreementInfringements.length }})</p>
     </button>
     <button class="tab bg-color--gray-light" *ngIf="!isMobileViewport()"
         (click)="selectedInfringements = coactiveInfringements"
@@ -37,7 +37,7 @@
         [class.tab--active]="coactiveInfringements.length > 0"
         [attr.aria-disabled]="coactiveInfringements.length === 0">
         <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.COACTIVE' | translate }}</p>
-        <p>({{ coactiveInfringements.length }}) - {{ formatCurrency(totalSumByCategory(coactiveInfringements)) }}</p>
+        <p>{{ formatCurrency(totalSumByCategory(coactiveInfringements)) }} - ({{ coactiveInfringements.length }})</p>
     </button>
     <button class="tab bg-color--gray-light" *ngIf="!isMobileViewport()"
         (click)="selectedInfringements = impugnationInfringements"
@@ -46,7 +46,7 @@
         [class.tab--active]="impugnationInfringements.length > 0"
         [attr.aria-disabled]="impugnationInfringements.length === 0">
         <p class="text-weight--medium">{{ 'INFRINGEMENT.STATUS.IMPUGNATION' | translate }}</p>
-        <p>({{ impugnationInfringements.length }}) - {{ formatCurrency(totalSumByCategory(impugnationInfringements)) }}
+        <p>{{ formatCurrency(totalSumByCategory(impugnationInfringements)) }} - ({{ impugnationInfringements.length }})
         </p>
     </button>
 </div>
@@ -72,7 +72,7 @@
             <td *ngIf="!isMobileViewport()">{{ formatCurrency(infringement.valuesInformation.value) }}</td>
             <td *ngIf="!isMobileViewport()">{{ formatCurrency(infringement.valuesInformation.interest) }}</td>
             <td>{{ formatCurrency(infringement.valuesInformation.total) }}</td>
-            <td [attr.aria-label]="'INFRINGEMENT.MORE_DETAILS' | translate: {date: infringement.dateInformation.emisionDate, total: infringement.valuesInformation.total}"
+            <td [attr.aria-label]="'INFRINGEMENT.MORE_DETAILS' | translate: {date: infringement.dateInformation.emisionDate, total: formatCurrency(infringement.valuesInformation.total)}"
                 role="button" class="text-weight--black details" tabindex="0"
                 (click)="showInfringementDetails(infringement)" (click)="showInfringementDetails(infringement)"
                 (keydown.enter)="showInfringementDetails(infringement)"

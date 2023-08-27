@@ -131,5 +131,6 @@
     "MESSAGE": "Lo sentimos, la página que buscas no está disponible en este momento. Te recomendamos regresar a la página principal para explorar otras opciones. Gracias por tu comprensión.",
     "RETURN": "Volver al inicio",
     "TITLE": "¡Ups!, parece que te has desviado de ruta"
-  }
+  },
+  "ON_PAGE_CHANGE": "Has ingresado a la página {{title}}"
 }
