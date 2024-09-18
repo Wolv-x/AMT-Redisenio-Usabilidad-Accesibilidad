@@ -18,7 +18,7 @@ jobs:
         build_configuration: production
         base_href: /AMT-Redisenio-Usabilidad-Accesibilidad/
         deploy_branch: gh-pages
-        angular_dist_build_folder: ./desarrollo/dist/infracciones-amt
+        angular_dist_build_folder: desarrollo/dist/infracciones-amt
 
 permissions:
   contents: write
